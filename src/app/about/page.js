@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function About() {
   return (
     <main className="flex min-h-screen flex-col">
@@ -141,44 +143,12 @@ export default function About() {
             <p className="max-w-[700px] text-white md:text-xl">
               Partner with Nobel Tech Innovation and transform your business with innovative solutions.
             </p>
-            <button className="inline-flex h-10 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-blue-600 shadow transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50">
+            <Link href="/contact" className="inline-flex h-10 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-blue-600 shadow transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50">
               Contact Us Today
-            </button>
+            </Link>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="w-full py-6 bg-gray-900 text-white">
-        <div className="container px-4 md:px-6 mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Nobel Tech Innovation</h3>
-              <p className="text-gray-400">Transforming ideas into innovative technological solutions</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li><a href="/" className="text-gray-400 hover:text-white">Home</a></li>
-                <li><a href="/services" className="text-gray-400 hover:text-white">Services</a></li>
-                <li><a href="/about" className="text-gray-400 hover:text-white">About</a></li>
-                <li><a href="/contact" className="text-gray-400 hover:text-white">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Contact</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>info@nobeltechinnovation.com</li>
-                <li>+1 (123) 456-7890</li>
-                <li>123 Innovation Street, Tech City</li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-8 border-t border-gray-800 pt-6 text-center">
-            <p className="text-gray-400">© 2024 Nobel Tech Innovation. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 } 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="500px" viewBox="0 0 600 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="team-image" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <rect fill="#F3F4F6" x="0" y="0" width="600" height="500"></rect>
+    <circle fill="#3B82F6" cx="150" cy="130" r="70"></circle>
+    <circle fill="#3B82F6" cx="300" cy="130" r="70"></circle>
+    <circle fill="#3B82F6" cx="450" cy="130" r="70"></circle>
+    <circle fill="#FFFFFF" cx="150" cy="100" r="20"></circle>
+    <circle fill="#FFFFFF" cx="300" cy="100" r="20"></circle>
+    <circle fill="#FFFFFF" cx="450" cy="100" r="20"></circle>
+    <rect fill="#3B82F6" x="80" y="200" width="140" height="200" rx="10"></rect>
+    <rect fill="#3B82F6" x="230" y="200" width="140" height="200" rx="10"></rect>
+    <rect fill="#3B82F6" x="380" y="200" width="140" height="200" rx="10"></rect>
+    <text font-family="Arial-BoldMT, Arial" font-size="36" font-weight="bold" fill="#1E40AF">
+      <tspan x="160" y="420">TEAM</tspan>
+    </text>
+  </g>
+</svg> 

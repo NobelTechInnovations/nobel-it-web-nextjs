@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="avatar2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <circle fill="#2563EB" cx="25" cy="25" r="25"></circle>
+    <circle fill="#FFFFFF" cx="25" cy="18" r="8"></circle>
+    <path d="M25,50 C34.665,50 43.2842557,43.2842557 46.6025404,33.7008102 C43.6584943,28.5854551 35.0547863,25 25,25 C14.9452137,25 6.3415057,28.5854551 3.39745962,33.7008102 C6.7157443,43.2842557 15.335,50 25,50 Z" fill="#FFFFFF"></path>
+  </g>
+</svg> 
