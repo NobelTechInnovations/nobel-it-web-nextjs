@@ -216,7 +216,7 @@ export default function Contact() {
                     <div>
                       <p className="font-semibold">Phone</p>
                       <a href="tel:+11234567890" className="text-blue-600 hover:underline">
-                        +1 (123) 456-7890
+                        +(91) 98280 51996
                       </a>
                     </div>
                   </div>
@@ -243,9 +243,9 @@ export default function Contact() {
                     <div>
                       <p className="font-semibold">Address</p>
                       <address className="not-italic">
-                        123 Innovation Street<br />
-                        Tech City, TC 12345<br />
-                        United States
+                        Atulya Chordia Building<br />
+                        Kamla Nehru Nagar<br />
+                        Jaipur, Rajasthan, India
                       </address>
                     </div>
                   </div>
@@ -351,7 +351,7 @@ export default function Contact() {
       </section>
 
       {/* Map Section - Placeholder */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 hidden">
         <div className="container px-4 md:px-6 mx-auto">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
             Visit Our Office
