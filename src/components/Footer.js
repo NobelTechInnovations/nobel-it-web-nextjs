@@ -12,8 +12,8 @@ const Footer = () => {
       <div className="container px-4 md:px-6 mx-auto relative z-10 py-12">
         {/* Company Logo */}
         <div className="flex justify-center mb-12">
-          <div className=" w-64 relative">
-            <img src="/logo_footer.png" alt="Clutch" className="h-15 mr-2" />
+          <div className=" w-100 relative h-15 mr-2">
+            <Image fill src="/logo_footer.png" alt="Clutch"  className="object-contain"/>
           </div>
         </div>
 
@@ -152,7 +152,7 @@ const Footer = () => {
 
           {/* Newsletter Sign-up */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Don't miss out updates</h3>
+            <h3 className="text-lg font-semibold mb-6">Don&apos;t miss out updates</h3>
             <form className="space-y-4">
               <div>
                 <input

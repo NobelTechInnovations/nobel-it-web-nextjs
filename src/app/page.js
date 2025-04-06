@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import Image from 'next/image'
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen">
@@ -23,9 +24,16 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="relative hidden lg:flex justify-end">
-              {/* Using actual office image as in reference */}
-              <img src="https://tecnologia.vamtam.com/wp-content/uploads/2023/03/GettyImages-618762080-1.jpg" alt="Office environment" className="w-full h-auto rounded-lg object-cover" />
+            <div className="relative hidden lg:flex justify-end h-[500px]">
+              {/* Using Next.js Image component with proper dimensions */}
+              <Image 
+                src="https://tecnologia.vamtam.com/wp-content/uploads/2023/03/GettyImages-618762080-1.jpg"
+                alt="Office environment" 
+                className="rounded-lg object-cover shadow-lg"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
             </div>
           </div>
         </div>
