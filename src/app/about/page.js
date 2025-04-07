@@ -26,20 +26,20 @@ export default function About() {
                 Our Story
               </h2>
               <p className="mt-4 text-gray-500 md:text-xl/relaxed">
-                Nobel Tech Innovation was founded in 2020 with a vision to transform how businesses leverage technology to grow and succeed.
+                Nobel Tech Innovation was founded in early 2024 with a vision to bring fresh, innovative technology solutions to growing businesses.
               </p>
               <p className="mt-4 text-gray-500 md:text-xl/relaxed">
-                What started as a small team of passionate developers has grown into a comprehensive tech consultancy, helping businesses of all sizes innovate and thrive in the digital landscape.
+                As a new startup, we combine our founder&apos;s industry expertise with cutting-edge technologies to deliver solutions that are both affordable and effective for businesses at any stage.
               </p>
               <p className="mt-4 text-gray-500 md:text-xl/relaxed">
-                Our journey has been marked by continuous learning, adaptation, and a commitment to excellence in everything we do.
+                Though we&apos;re just beginning our journey, we&apos;re driven by a passion for technology and a commitment to helping other startups and small businesses thrive in the digital landscape.
               </p>
             </div>
             <div className="flex justify-center">
               <div className="relative w-full h-[400px] bg-gray-200 rounded-lg">
                 {/* Placeholder for an image */}
                 <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-xl">
-                  Company History Image
+                  Our Startup Journey Image
                 </div>
               </div>
             </div>
@@ -55,25 +55,25 @@ export default function About() {
               Our Mission
             </h2>
             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed">
-              To empower businesses through innovative technology solutions that drive growth and success
+              To democratize access to quality technology solutions, helping startups and small businesses compete and succeed
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
             {[
               {
-                title: "Innovation",
-                description: "We constantly explore new technologies and approaches to solve complex problems",
-                icon: "💡",
+                title: "Accessibility",
+                description: "We make enterprise-level technology accessible to businesses of all sizes and budgets",
+                icon: "🚪",
               },
               {
-                title: "Excellence",
-                description: "We strive for excellence in every project, delivering high-quality solutions",
-                icon: "🏆",
+                title: "Agility",
+                description: "As a startup ourselves, we move quickly and adapt to deliver what our clients need",
+                icon: "🏃",
               },
               {
-                title: "Partnership",
-                description: "We form true partnerships with our clients, understanding their needs deeply",
-                icon: "🤝",
+                title: "Growth",
+                description: "We grow alongside our clients, learning and evolving with every project",
+                icon: "🌱",
               },
             ].map((value, index) => (
               <div key={index} className="flex flex-col items-center space-y-2 border rounded-lg p-6 shadow-sm">
@@ -94,30 +94,25 @@ export default function About() {
               Meet Our Team
             </h2>
             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed">
-              The talented professionals behind Nobel Tech Innovation
+              The passionate founders behind Nobel Tech Innovation
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
             {[
               {
-                name: "John Doe",
+                name: "Raj Sharma",
                 position: "Founder & CEO",
-                bio: "15+ years of experience in tech leadership",
+                bio: "Former tech consultant with a passion for helping small businesses succeed",
               },
               {
-                name: "Jane Smith",
-                position: "CTO",
-                bio: "Expert in AI and cloud architecture",
-              },
-              {
-                name: "Michael Johnson",
+                name: "Priya Patel",
                 position: "Lead Developer",
-                bio: "Full-stack developer specializing in web applications",
+                bio: "Full-stack developer with experience in modern web frameworks",
               },
               {
-                name: "Sarah Williams",
-                position: "Design Director",
-                bio: "Award-winning UX/UI designer",
+                name: "Amit Kumar",
+                position: "Design Lead",
+                bio: "UI/UX designer focused on creating intuitive, user-friendly experiences",
               },
             ].map((member, index) => (
               <div key={index} className="flex flex-col items-center space-y-2 border rounded-lg p-6 shadow-sm">
@@ -138,13 +133,13 @@ export default function About() {
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-white">
-              Join Our Journey
+              Grow With Us
             </h2>
             <p className="max-w-[700px] text-white md:text-xl">
-              Partner with Nobel Tech Innovation and transform your business with innovative solutions.
+              As we build our startup, we&apos;re looking to partner with businesses who share our vision for innovation and growth.
             </p>
             <Link href="/contact" className="inline-flex h-10 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-blue-600 shadow transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50">
-              Contact Us Today
+              Start Your Journey Today
             </Link>
           </div>
         </div>

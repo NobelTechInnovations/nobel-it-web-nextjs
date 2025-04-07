@@ -310,10 +310,10 @@ export default function Contact() {
               <div>
                 <h3 className="text-xl font-bold mb-4">We&rsquo;re Here to Help</h3>
                 <p className="mb-4">
-                  Whether you&rsquo;re looking for IT consulting, web development, cybersecurity solutions, or any other digital service, our team is ready to assist you.
+                  As a new startup founded in 2024, we&apos;re eager to collaborate with businesses of all sizes. Whether you need web development, IT consulting, or cybersecurity solutions, our team is ready to assist.
                 </p>
                 <p>
-                  Fill out the form or contact us directly, and we&rsquo;ll get back to you as soon as possible.
+                  We&apos;re at the beginning of our journey and looking forward to growing alongside our clients. Fill out the form or contact us directly to start a conversation about your needs.
                 </p>
               </div>
             </div>
@@ -325,12 +325,12 @@ export default function Contact() {
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
         <div className="container px-4 md:px-6 mx-auto">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-12 text-center">
-            Our Locations
+            Our Location
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-xl font-bold mb-2">Jaipur Office</h3>
-              <p className="text-gray-500 mb-4">Headquarters</p>
+              <p className="text-gray-500 mb-4">Headquarters (Est. 2024)</p>
               <address className="not-italic mb-4 text-gray-700">
                 Atulya Chordia Building<br />
                 Kamla Nehru Nagar<br />
@@ -349,10 +349,10 @@ export default function Contact() {
       <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-600 text-white">
         <div className="container px-4 md:px-6 mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
-            Ready to Transform Your Business?
+            Join Us at the Start of Something Great
           </h2>
           <p className="max-w-[700px] mx-auto mb-8 text-lg">
-            Partner with Nobel Tech Innovation for innovative technology solutions that drive growth and efficiency.
+            As we build our startup, we&apos;re looking for partners who are excited to innovate and grow together.
           </p>
           <a
             href="tel:+919828051996"

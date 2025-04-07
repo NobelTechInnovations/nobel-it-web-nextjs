@@ -25,16 +25,12 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <p className="text-lg text-gray-700">
-              When we say comprehensive, we mean comprehensive. 
-              Tecnologia has the experience and expertise to provide an 
-              excellent experience across spheres, for truly holistic IT.
+              As a startup ourselves, we understand what it takes to build a business from the ground up. We offer tailored IT services that meet the unique needs of growing businesses without breaking the bank.
             </p>
           </div>
           <div>
             <p className="text-lg text-gray-700">
-              Some MSPs struggle to offer consulting or network services. But
-              your organization needs the entire experience to stop worrying
-              about IT. Learn more about our services below.
+              Founded in 2024, we bring fresh perspectives and modern approaches to technology solutions. We&apos;re small enough to care deeply about every client, but skilled enough to deliver exceptional results.
             </p>
           </div>
         </div>
@@ -50,7 +46,7 @@ export default function Services() {
               <div>
                 <div className="uppercase text-sm font-medium mb-4">OUR SERVICES</div>
                 <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-                  Technology solutions<br />for modern businesses.
+                  Startup-friendly<br />technology solutions.
                 </h2>
               </div>
               <div className="hidden md:block">
@@ -196,7 +192,7 @@ export default function Services() {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-[#212529]">Why choose services from Nobel Tech Innovation?</h2>
               <p className="text-lg text-gray-700 mb-8">
-                Nobel Tech Innovation services provide businesses with an edge over the competition with a variety of benefits. Opting for outsourced IT services improve the efficiency of business and build trust with customers and clients. Our services can be tailored to meet specific needs to match your specific goals.
+                As a new startup founded in 2024, we bring fresh energy and innovative approaches to the table. We understand the challenges of growing businesses because we&apos;re experiencing them too. Our services are flexible, affordable, and designed to scale with your needs—whether you&apos;re just starting out or looking to take your business to the next level.
               </p>
               <Link 
                 href="/contact" 
@@ -215,9 +211,9 @@ export default function Services() {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <div className="lg:col-span-3">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Business?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Let&apos;s Grow Together</h2>
               <p className="text-gray-100 text-lg mb-8">
-                Partner with Nobel Tech Innovation for innovative technology solutions that drive growth and efficiency.
+                As a new startup ourselves, we understand the journey you&apos;re on. Partner with Nobel Tech Innovation for technology solutions that help you build, scale, and succeed.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <Link 

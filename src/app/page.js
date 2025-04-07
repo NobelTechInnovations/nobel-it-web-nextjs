@@ -46,12 +46,12 @@ export default function Home() {
             <div className="flex flex-col items-center md:items-start">
               <div className="flex items-center">
                 
-                <span className="text-sm text-gray-600">REVIEWED ON</span>
+                <span className="text-sm text-gray-600">COMING SOON ON</span>
               </div>
               <div className="flex items-center mt-1">
                 <span className="text-lg font-bold mr-2">Clutch</span>
                 <div className="flex">
-                  <span className="text-xs text-gray-600">31 REVIEWS</span>
+                  <span className="text-xs text-gray-600">SEEKING REVIEWS</span>
                 </div>
               </div>
               <div className="flex mt-1">
@@ -70,25 +70,25 @@ export default function Home() {
             </div>
             
             <div className="flex flex-col items-center md:items-start">
-              <div className="text-3xl font-bold text-gray-900">20 <span className="text-sm text-gray-700 mt-1">Years</span>
+              <div className="text-3xl font-bold text-gray-900">3 <span className="text-sm text-gray-700 mt-1">Months</span>
               </div>
               
-              <div className="text-sm text-gray-600">Proven Track Record</div>
+              <div className="text-sm text-gray-600">In Business (Since 2024)</div>
             </div>
             
             <div className="flex flex-col items-center md:items-start">
-              <div className="text-3xl font-bold text-gray-900">98<span className="text-2xl">%</span></div>
-              <div className="text-sm text-gray-600">Customer Satisfaction</div>
+              <div className="text-3xl font-bold text-gray-900">90<span className="text-2xl">%</span></div>
+              <div className="text-sm text-gray-600">Client Satisfaction Goal</div>
             </div>
             
             <div className="flex flex-col items-center md:items-start">
-              <div className="text-3xl font-bold text-gray-900">1,500 <span className="text-sm text-gray-700 mt-1">Projects</span></div>
-              <div className="text-sm text-gray-600">We Have Completed</div>
+              <div className="text-3xl font-bold text-gray-900">5 <span className="text-sm text-gray-700 mt-1">Projects</span></div>
+              <div className="text-sm text-gray-600">Successfully Launched</div>
             </div>
 
             <div className="flex flex-col items-center md:items-start">
               <div className="text-3xl font-bold text-gray-900">3 <span className="text-sm text-gray-700 mt-1">Mins</span></div>
-              <div className="text-sm text-gray-600">Average Answer Time</div>
+              <div className="text-sm text-gray-600">Average Response Time</div>
             </div>
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function Home() {
               <div>
                 <div className="uppercase text-sm font-medium mb-4">WHAT WE DO</div>
                 <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-                  Simplifying IT<br />for a complex world.
+                  Fresh approach to IT<br />for growing businesses.
                 </h2>
               </div>
               <div className="hidden md:block">
@@ -139,7 +139,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-4">Cost-effectiveness</h3>
               <p className="text-gray-600">
-                We offer affordable IT solutions that help you reduce costs and improve your bottom line.
+                As a lean startup, we provide affordable IT solutions that give you enterprise quality without the premium price tag.
               </p>
             </div>
 
@@ -151,7 +151,7 @@ export default function Home() {
 
               <h3 className="text-xl font-bold mb-4">Innovative Technology</h3>
               <p className="text-gray-600">
-                We stay up-to-date with the latest technology trends and offer innovative solutions that help you stay ahead of the competition.
+                Built in 2024 with modern tech at our core, we leverage the latest tools and frameworks to deliver cutting-edge solutions.
               </p>
             </div>
 
@@ -162,9 +162,9 @@ export default function Home() {
                   <Image src="https://tecnologia.vamtam.com/wp-content/uploads/2023/03/Industry.svg" alt="Cost-effectiveness" width={60} height={60} />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-4">Industry Expertise</h3>
+              <h3 className="text-xl font-bold mb-4">Fresh Perspective</h3>
               <p className="text-gray-600">
-                We specialize in serving specific industries, such as healthcare, finance, or manufacturing, and offer tailored solutions that meet your unique needs.
+                Our founder&apos;s industry background and our team&apos;s innovative approach bring new solutions to old problems faced by businesses like yours.
               </p>
             </div>
 
@@ -177,7 +177,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-4">Scalability</h3>
               <p className="text-gray-600">
-                Our solutions are scalable and can grow with your business, ensuring that you get the most value out of your investment.
+                We&apos;re growing alongside our clients. Our solutions are designed to scale with your business, from startup to success story.
               </p>
             </div>
           </div>
@@ -189,9 +189,9 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <div className="lg:col-span-3">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Business?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Grow Your Business With Us</h2>
               <p className="text-gray-100 text-lg mb-8">
-                Partner with Nobel Tech Innovation for innovative technology solutions that drive growth and efficiency.
+                As a new startup ourselves, we understand the challenges of building something from the ground up. Let&apos;s grow together.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <Link 
