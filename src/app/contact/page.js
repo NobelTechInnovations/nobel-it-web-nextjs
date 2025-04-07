@@ -1,14 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import emailjs from '@emailjs/browser';
+import { initEmailJS, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY } from '@/lib/emailjs';
 
 export default function Contact() {
+  const formRef = useRef();
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    user_name: "",
+    user_email: "",
     phone: "",
     company: "",
     message: "",
+    service: "",
   });
 
   const [formStatus, setFormStatus] = useState({
@@ -16,6 +20,11 @@ export default function Contact() {
     type: "", // success or error
     isSubmitting: false,
   });
+
+  // Initialize EmailJS when component mounts
+  useEffect(() => {
+    initEmailJS();
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -33,21 +42,48 @@ export default function Contact() {
       isSubmitting: true,
     });
 
-    // Simulate form submission
-    setTimeout(() => {
+    // Send email using EmailJS with direct parameter passing for better control
+    emailjs.send(
+      EMAILJS_SERVICE_ID,
+      EMAILJS_TEMPLATE_ID,
+      {
+        from_name: "Nobel Tech Website Contact Form",
+        to_name: "Nobel Tech Team",
+        to_email: "nobeltechinnovations@gmail.com", // Hard-coded recipient
+        user_name: formData.user_name,
+        user_email: formData.user_email,
+        phone: formData.phone || "Not provided", // Handle empty phone
+        company: formData.company || "Not provided", // Handle empty company
+        service: formData.service,
+        message: formData.message,
+        reply_to: formData.user_email
+      },
+      EMAILJS_PUBLIC_KEY
+    )
+    .then((result) => {
+      console.log("EmailJS success:", result.text);
       setFormStatus({
         message: "Thank you for your message! We'll get back to you soon.",
         type: "success",
         isSubmitting: false,
       });
       setFormData({
-        name: "",
-        email: "",
+        user_name: "",
+        user_email: "",
         phone: "",
         company: "",
         message: "",
+        service: "",
       });
-    }, 1500);
+    })
+    .catch((error) => {
+      console.error('EmailJS error details:', error?.text || 'Unknown error', error);
+      setFormStatus({
+        message: `Error: ${error?.text || 'There was an error sending your message. Please try again later.'}`,
+        type: "error",
+        isSubmitting: false,
+      });
+    });
   };
 
   return (
@@ -75,34 +111,34 @@ export default function Contact() {
                 Get In Touch
               </h2>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium leading-none">
+                    <label htmlFor="user_name" className="text-sm font-medium leading-none">
                       Full Name
                     </label>
                     <input
-                      id="name"
-                      name="name"
+                      id="user_name"
+                      name="user_name"
                       className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       type="text"
                       placeholder="John Doe"
-                      value={formData.name}
+                      value={formData.user_name}
                       onChange={handleChange}
                       required
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium leading-none">
+                    <label htmlFor="user_email" className="text-sm font-medium leading-none">
                       Email
                     </label>
                     <input
-                      id="email"
-                      name="email"
+                      id="user_email"
+                      name="user_email"
                       className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       type="email"
                       placeholder="john.doe@example.com"
-                      value={formData.email}
+                      value={formData.user_email}
                       onChange={handleChange}
                       required
                     />
@@ -137,6 +173,25 @@ export default function Contact() {
                       onChange={handleChange}
                     />
                   </div>
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="service" className="text-sm font-medium leading-none">
+                    Service Required
+                  </label>
+                  <select
+                    id="service"
+                    name="service"
+                    value={formData.service}
+                    onChange={handleChange}
+                    className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    required
+                  >
+                    <option value="">Select a service</option>
+                    <option value="it-consulting">IT Consulting</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="cloud-services">Cloud Services</option>
+                    <option value="cyber-security">Cyber Security</option>
+                  </select>
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium leading-none">
@@ -193,8 +248,8 @@ export default function Contact() {
                     </svg>
                     <div>
                       <p className="font-semibold">Email</p>
-                      <a href="mailto:info@nobeltechinnovation.com" className="text-blue-600 hover:underline">
-                        info@nobeltechinnovation.com
+                      <a href="mailto:nobeltechinnovations@gmail.com" className="text-blue-600 hover:underline">
+                        nobeltechinnovations@gmail.com
                       </a>
                     </div>
                   </div>
@@ -215,7 +270,7 @@ export default function Contact() {
                     </svg>
                     <div>
                       <p className="font-semibold">Phone</p>
-                      <a href="tel:+11234567890" className="text-blue-600 hover:underline">
+                      <a href="tel:+919828051996" className="text-blue-600 hover:underline">
                         +(91) 98280 51996
                       </a>
                     </div>
@@ -251,114 +306,60 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+
               <div>
-                <h3 className="text-xl font-bold mb-4">Office Hours</h3>
-                <ul className="space-y-2">
-                  <li className="flex justify-between">
-                    <span>Monday - Friday:</span>
-                    <span>9:00 AM - 6:00 PM</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>Saturday:</span>
-                    <span>10:00 AM - 2:00 PM</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>Sunday:</span>
-                    <span>Closed</span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-4">Follow Us</h3>
-                <div className="flex space-x-4">
-                  <a href="#" className="text-gray-600 hover:text-blue-600">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-6 w-6"
-                    >
-                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                    </svg>
-                    <span className="sr-only">Facebook</span>
-                  </a>
-                  <a href="#" className="text-gray-600 hover:text-blue-600">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-6 w-6"
-                    >
-                      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                    </svg>
-                    <span className="sr-only">Twitter</span>
-                  </a>
-                  <a href="#" className="text-gray-600 hover:text-blue-600">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-6 w-6"
-                    >
-                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-                    </svg>
-                    <span className="sr-only">Instagram</span>
-                  </a>
-                  <a href="#" className="text-gray-600 hover:text-blue-600">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-6 w-6"
-                    >
-                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                      <rect width="4" height="12" x="2" y="9"></rect>
-                      <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                    <span className="sr-only">LinkedIn</span>
-                  </a>
-                </div>
+                <h3 className="text-xl font-bold mb-4">We&rsquo;re Here to Help</h3>
+                <p className="mb-4">
+                  Whether you&rsquo;re looking for IT consulting, web development, cybersecurity solutions, or any other digital service, our team is ready to assist you.
+                </p>
+                <p>
+                  Fill out the form or contact us directly, and we&rsquo;ll get back to you as soon as possible.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Map Section - Placeholder */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 hidden">
+      {/* Office Locations */}
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
         <div className="container px-4 md:px-6 mx-auto">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">
-            Visit Our Office
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-12 text-center">
+            Our Locations
           </h2>
-          <div className="w-full h-[400px] bg-gray-200 rounded-lg flex items-center justify-center text-gray-400 text-xl">
-            Interactive Map Placeholder
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-bold mb-2">Jaipur Office</h3>
+              <p className="text-gray-500 mb-4">Headquarters</p>
+              <address className="not-italic mb-4 text-gray-700">
+                Atulya Chordia Building<br />
+                Kamla Nehru Nagar<br />
+                Jaipur, Rajasthan<br />
+                India
+              </address>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                Get directions →
+              </a>
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-600 text-white">
+        <div className="container px-4 md:px-6 mx-auto text-center">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
+            Ready to Transform Your Business?
+          </h2>
+          <p className="max-w-[700px] mx-auto mb-8 text-lg">
+            Partner with Nobel Tech Innovation for innovative technology solutions that drive growth and efficiency.
+          </p>
+          <a
+            href="tel:+919828051996"
+            className="inline-flex h-10 items-center justify-center rounded-md bg-white text-blue-600 px-8 text-sm font-medium shadow transition-colors hover:bg-gray-100"
+          >
+            Call Us Now
+          </a>
         </div>
       </section>
     </main>
