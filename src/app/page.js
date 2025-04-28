@@ -170,7 +170,7 @@ export default function Home() {
               },
               {
                 title: "Mobile Software Development",
-                description: "In today's mobile-first world, having a strong mobile presence is crucial. Our mobile software development services include both native and cross-platform app development. We use the latest technologies and frameworks to create intuitive, feature-rich mobile applications that provide an exceptional user experience. Whether you need an iOS or Android app, we can help you reach your target audience effectively.",
+                description: "In today&apos;s mobile-first world, having a strong mobile presence is crucial. Our mobile software development services include both native and cross-platform app development. We use the latest technologies and frameworks to create intuitive, feature-rich mobile applications that provide an exceptional user experience. Whether you need an iOS or Android app, we can help you reach your target audience effectively.",
                 icon: <Icon icon="material-icon-theme:android" width="64" height="64" />,
                 color: "bg-blue-50 text-blue-600",
               },

@@ -23,7 +23,7 @@ export default function TermsAndConditions() {
           <div className="prose prose-lg max-w-none">
             <h2 className="font-bold text-2xl">1. Introduction</h2>
             <p className="font-meduium text-lg mb-6">
-              Welcome to Nobel Tech Innovations ("Nobel Tech," "we," "us," or "our"). These Terms and Conditions ("Terms") govern your access to and use of our website, including any content, functionality, and services offered on or through <a href="http://www.nobeltechinnovations.com" className="text-blue-600 hover:underline">www.nobeltechinnovations.com</a> (the "Site").
+              Welcome to Nobel Tech Innovations (&quot;Nobel Tech,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). These Terms and Conditions (&quot;Terms&quot;) govern your access to and use of our website, including any content, functionality, and services offered on or through <a href="http://www.nobeltechinnovations.com" className="text-blue-600 hover:underline">www.nobeltechinnovations.com</a> (the &quot;Site&quot;).
             </p>
 
             <h2 className="font-bold text-2xl">2. Acceptance of Terms</h2>
@@ -87,7 +87,7 @@ export default function TermsAndConditions() {
               Have Questions?
             </h2>
             <p className="max-w-[700px] text-white md:text-xl">
-              If you have any questions about our terms and conditions, please don't hesitate to contact us.
+              If you have any questions about our terms and conditions, please don&apos;t hesitate to contact us.
             </p>
             <Link href="/contact" className="inline-flex h-10 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-blue-600 shadow transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50">
               Contact Us

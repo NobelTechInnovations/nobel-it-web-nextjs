@@ -83,7 +83,7 @@ export default function PrivacyPolicy() {
               <li>The right to data portability</li>
             </ul>
 
-            <h2 className="font-bold text-2xl">7. Children's Privacy</h2>
+            <h2 className="font-bold text-2xl">7. Children&apos;s Privacy</h2>
             <p className='font-medium text-lg mb-6'>
               Our services are not intended for individuals under the age of 16. We do not knowingly collect personal 
               information from children. If you are a parent or guardian and believe that your child has provided us 
@@ -93,7 +93,7 @@ export default function PrivacyPolicy() {
             <h2 className="font-bold text-2xl">8. Changes to This Privacy Policy</h2>
             <p className='font-medium text-lg mb-6'>
               We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new 
-              Privacy Policy on this page and updating the "Last Updated" date.
+              Privacy Policy on this page and updating the Last &quot;Updated&quot; date.
             </p>
 
             <h2 className="font-bold text-2xl">9. Contact Us</h2>
@@ -122,7 +122,7 @@ export default function PrivacyPolicy() {
               Have Questions About Your Privacy?
             </h2>
             <p className="max-w-[700px] text-white md:text-xl">
-              If you have any questions about our privacy policy or how we handle your data, please don't hesitate to contact us.
+              If you have any questions about our privacy policy or how we handle your data, please don&apos;t hesitate to contact us.
             </p>
             <Link href="/contact" className="inline-flex h-10 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-blue-600 shadow transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50">
               Contact Us
