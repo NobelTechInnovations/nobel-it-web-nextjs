@@ -14,12 +14,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Nobel Tech Innovation",
-  description: "Innovative technology solutions for a better future",
-  keywords: ["technology", "innovation", "tech solutions", "Nobel Tech"],
+  title: "Nobel Tech Innovation | Best IT Company in Jaipur | Web Development, SEO & Digital Solutions",
+  description: "Top IT company in Jaipur offering expert web development, SEO, mobile app development, and digital marketing services. Boost your online presence with our customized solutions. Contact us today!",
+  keywords: ["IT company in Jaipur", "Best IT services Jaipur", "Web development Jaipur", "Mobile app development Jaipur","Software development company Jaipur","Affordable IT solutions Jaipur"],
   openGraph: {
-    title: "Nobel Tech Innovation",
-    description: "Innovative technology solutions for a better future",
+    title: "Best IT Company in Jaipur | Web Development, SEO & Digital Solutions | Nobel Tech Innovation",
+    description: "Top IT company in Jaipur offering expert web development, SEO, mobile app development, and digital marketing services. Boost your online presence with our customized solutions. Contact us today!",
     url: "https://nobeltechinnovation.com",
     siteName: "Nobel Tech Innovation",
     locale: "en_US",
