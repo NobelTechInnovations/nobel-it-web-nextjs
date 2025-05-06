@@ -99,7 +99,7 @@ export default function Home() {
       </section>
 
       {/* About Us Section */}
-      <section id="about" className="w-full py-16 md:py-24 lg:py-32 relative">
+      <section id="about" className="w-full py-16 md:py-24 lg:py-32 relative bg-gray-50">
         <div className="absolute w-100 top-4 left-4 -z-10 blur-2xl">
           <svg viewBox="0 0 200 200" className='up-down' xmlns="http://www.w3.org/2000/svg">
             <path fill="#E8DAFF" d="M34.6,-51C45.8,-46.8,56.2,-38.6,60.3,-28C64.3,-17.5,61.8,-4.5,58,7C54.3,18.5,49.2,28.4,43.1,39.6C36.9,50.9,29.6,63.4,19.2,67.2C8.9,71.1,-4.6,66.2,-19.2,63C-33.9,59.8,-49.7,58.3,-55.5,49.4C-61.2,40.4,-56.9,24,-54.5,10.6C-52.2,-2.8,-51.9,-13.2,-51.9,-28.1C-51.9,-43,-52.2,-62.4,-43.6,-67.8C-35.1,-73.1,-17.5,-64.5,-2.9,-60C11.8,-55.5,23.5,-55.2,34.6,-51Z" transform="translate(100 100)" />
@@ -142,8 +142,81 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Our Products Section */}
+      <section className="w-full py-16 md:py-24 lg:py-32 bg-white relative">
+        <div className="absolute opacity-75 w-100 right-0 top-0 blur-2xl">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#cfeeff" d="M28.7,-49.1C42.5,-41.7,62.8,-44.8,70,-38.4C77.3,-31.9,71.6,-16,71.6,0C71.5,15.9,77.1,31.8,71.1,40.4C65,48.9,47.3,50.2,33.6,57.1C19.8,64,9.9,76.6,-2.7,81.3C-15.2,85.9,-30.5,82.5,-39.5,72.9C-48.5,63.2,-51.3,47.2,-49.9,34C-48.6,20.8,-43.1,10.4,-44.7,-0.9C-46.3,-12.2,-55,-24.5,-52.9,-31.8C-50.9,-39.1,-38.1,-41.5,-27.5,-50.7C-16.9,-60,-8.4,-76.1,-0.5,-75.2C7.4,-74.3,14.9,-56.5,28.7,-49.1Z" transform="translate(100 100)" />
+          </svg>
+        </div>
+        <div className="container px-4 md:px-6 mx-auto z-10 relative">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
+            <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase">Innovative Solutions</span>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-gray-900">
+              Our Products
+            </h2>
+            <p className="max-w-[700px] text-gray-600 text-lg leading-relaxed">
+              Experience our cutting-edge products designed to enhance your digital presence and streamline operations. Tailored to meet your unique needs, our solutions empower your business to thrive.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
+            {[
+              {
+                name: "BuzzKit",
+                tagline: "Empower Your Sales",
+                description: "Elevate your Sales, Marketing, Social Media, Communication and Productivity on One Seamless Platform!",
+                icon: <Icon icon="emojione-v1:three-networked-computers" width="48" height="48" />,
+                link: "/products/buzzkit",
+                knowmore: "Know More",
+                isLaunchingSoon: false
+              },
+              {
+                name: "CedarSync",
+                tagline: "All Marketplace solutions in one place",
+                description: "Effortlessly manage listings, orders, and inventory across multiple platforms with CedarSync—your all-in-one marketplace solution.",
+                icon: <Icon icon="emojione-v1:three-networked-computers" width="48" height="48" />,
+                link: "#",
+                knowmore: "Know More",
+                isLaunchingSoon: true
+              },
+              {
+                name: "Agora Marketplace",
+                tagline: "Instant Delivery App",
+                description: "Agora Marketplace is a new instant delivery app that promises to deliver products to users in just a wink.",
+                icon: <Icon icon="emojione-v1:three-networked-computers" width="48" height="48" />,
+                link: "#",
+                knowmore: "Know More",
+                isLaunchingSoon: true
+              }
+            ].map((product, index) => (
+              <div className="group relative hover:shadow-2xl transition-all duration-300 overflow-hidden rounded-2xl bg-white hover:border-blue-500 border border-gray-300 p-6 transition-all">
+                <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-gradient-to-br from-blue-50 to-blue-100 blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300" />
+                {product.isLaunchingSoon && (
+                  <div className="absolute top-4 right-4 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
+                    Launching Soon
+                  </div>
+                )}
+                <div className="relative space-y-4 h-full">
+                  <div className="text-start grid gap-4 h-full items-space-between">
+                    <div>
+                      <div className="inline-block bg-slate-100 rounded-full p-3">{product.icon}</div>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">{product.name}</h3>
+                      <p className="text-slate-700 font-medium text-lg mb-2">{product.tagline}</p>
+                      <p className="text-gray-600 text-sm">{product.description}</p>
+                    </div>
+                    <div>
+                      <Link href={product.link} key={index} className="hover:text-blue-600 hover:underline text-gray-600 text-sm">{product.knowmore}</Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Our Services Section */}
-      <section id="services" className="w-full py-16 md:py-24 lg:py-32 relative">
+      <section id="services" className="w-full py-16 md:py-24 lg:py-32 relative bg-gray-50">
         {/* Background Image with Overlay */}
 
         <div className="absolute opacity-75 w-100 right-0 top-0 -z-10 blur-2xl">
@@ -197,7 +270,7 @@ export default function Home() {
             ].map((value, index) => (
               <div
                 key={index}
-                className="col-span-12 md:col-span-6 glass_effect lg:col-span-4 group relative overflow-hidden rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 bg-white"
+                className="col-span-12 md:col-span-6 glass_effect hover:border-blue-500 border border-gray-300 lg:col-span-4 group relative overflow-hidden rounded-2xl p-8 hover:shadow-2xl transition-all duration-300"
               >
                 <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-gradient-to-br from-blue-50 to-blue-100 blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300" />
                 <div className="relative space-y-4">
@@ -289,7 +362,7 @@ export default function Home() {
                 icon: <Icon icon="mdi:clock-time-four" width="64" height="64" className="text-blue-600" />,
               },
             ].map((item, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-2xl bg-white border border-gray-300 p-6 transition-all duration-300">
+              <div key={index} className="group relative overflow-hidden rounded-2xl bg-white hover:border-blue-500 border border-gray-300 hover:shadow-2xl p-6 transition-all duration-300">
                 <div className="relative space-y-4">
                   <div className="flex justify-center">
                     {item.icon}
@@ -300,71 +373,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Our Products Section */}
-      <section className="w-full py-16 md:py-24 lg:py-32 bg-white relative">
-        <div className="absolute opacity-75 w-100 right-0 top-0 blur-2xl">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#cfeeff" d="M28.7,-49.1C42.5,-41.7,62.8,-44.8,70,-38.4C77.3,-31.9,71.6,-16,71.6,0C71.5,15.9,77.1,31.8,71.1,40.4C65,48.9,47.3,50.2,33.6,57.1C19.8,64,9.9,76.6,-2.7,81.3C-15.2,85.9,-30.5,82.5,-39.5,72.9C-48.5,63.2,-51.3,47.2,-49.9,34C-48.6,20.8,-43.1,10.4,-44.7,-0.9C-46.3,-12.2,-55,-24.5,-52.9,-31.8C-50.9,-39.1,-38.1,-41.5,-27.5,-50.7C-16.9,-60,-8.4,-76.1,-0.5,-75.2C7.4,-74.3,14.9,-56.5,28.7,-49.1Z" transform="translate(100 100)" />
-          </svg>
-        </div>
-        <div className="container px-4 md:px-6 mx-auto z-10 relative">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
-            <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase">Innovative Solutions</span>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-gray-900">
-              Our Products
-            </h2>
-            <p className="max-w-[700px] text-gray-600 text-lg leading-relaxed">
-              Experience our cutting-edge products designed to enhance your digital presence and streamline operations. Tailored to meet your unique needs, our solutions empower your business to thrive.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
-            {[
-              {
-                name: "Kit19",
-                tagline: "Empower Your Sales",
-                description: "Elevate your Sales, Marketing, Social Media, Communication and Productivity on One Seamless Platform!",
-                icon: <Icon icon="emojione-v1:three-networked-computers" width="48" height="48" />,
-                link: "/products/kit19",
-                isLaunchingSoon: false
-              },
-              {
-                name: "CedarSync",
-                tagline: "All Marketplace solutions in one place",
-                description: "Effortlessly manage listings, orders, and inventory across multiple platforms with CedarSync—your all-in-one marketplace solution.",
-                icon: <Icon icon="emojione-v1:three-networked-computers" width="48" height="48" />,
-                link: "#",
-                isLaunchingSoon: true
-              },
-              {
-                name: "Agora Marketplace",
-                tagline: "Instant Delivery App",
-                description: "Full-stack developer with experience in modern web frameworks",
-                icon: <Icon icon="emojione-v1:three-networked-computers" width="48" height="48" />,
-                link: "#",
-                isLaunchingSoon: true
-              }
-            ].map((product, index) => (
-              <Link href={product.link} key={index} className="group relative hover:shadow-2xl transition-all duration-300 overflow-hidden rounded-2xl bg-white border border-gray-300 p-6 transition-all">
-                <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-gradient-to-br from-blue-50 to-blue-100 blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300" />
-                {product.isLaunchingSoon && (
-                  <div className="absolute top-4 right-4 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
-                    Launching Soon
-                  </div>
-                )}
-                <div className="relative space-y-4">
-                  <div className="text-start">
-                    <div className="inline-block mb-4 bg-slate-100 rounded-full p-3">{product.icon}</div>
-                    <h3 className="text-2xl font-bold text-gray-900">{product.name}</h3>
-                    <p className="text-slate-700 font-medium text-lg mt-3">{product.tagline}</p>
-                    <p className="text-gray-600 text-sm mt-3">{product.description}</p>
-                  </div>
-                </div>
-              </Link>
             ))}
           </div>
         </div>

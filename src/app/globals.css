@@ -85,7 +85,6 @@ h6 {
   border-radius: 16px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid #165dfc;
 }
 
 .up-down {
