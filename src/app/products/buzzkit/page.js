@@ -848,7 +848,6 @@ export default function BuzzKitPage() {
                                     <div>
                                         <h3 className="font-semibold text-lg">Name</h3>
                                         <h4 className="text-xl">Devanshu Kumar</h4>
-                                        <p className="text-md">Sales Manager</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start space-x-4 text-white">
@@ -857,8 +856,8 @@ export default function BuzzKitPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-lg">Phone</h3>
-                                        <a href="tel:+918235379002" className="hover:underline">+91 823 537 9002</a><br />
-                                        <a href="tel:+919828051996" className="hover:underline">+91 982 805 1996</a>
+                                        <a href="tel:+918235379002" className="hover:underline">+91 82353 78002</a><br />
+                                        <a href="tel:+919828051996" className="hover:underline">+91 98280 51996</a>
                                     </div>
                                 </div>
                                 <div className="flex items-start space-x-4 text-white">
@@ -867,8 +866,11 @@ export default function BuzzKitPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-lg">Email</h3>
-                                        <a href="mailto:nobeltechinnovations@gmail.com" className="hover:underline">
-                                            nobeltechinnovations@gmail.com
+                                        <a href="mailto:devanshu@nobeltechinnovations.com" className="hover:underline">
+                                            devanshu@nobeltechinnovations.com
+                                        </a>
+                                        <a href="mailto:info@nobeltechinnovations.com" className="hover:underline">
+                                            info@nobeltechinnovations.com
                                         </a>
                                     </div>
                                 </div>
