@@ -10,7 +10,7 @@ export default function Kit19Page() {
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center space-y-4 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-white">
-              Kit19
+              BuzzKit
             </h1>
             <p className="max-w-[700px] text-white text-lg md:text-xl">
               Empower Your Sales, Marketing, Social Media, Communication and Productivity on One Seamless Platform!
@@ -25,7 +25,7 @@ export default function Kit19Page() {
           <div className="grid gap-10 lg:grid-cols-2 items-center">
             <div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                All-in-One Business Solution
+              AutoLead Capturing
               </h2>
               <p className="mt-4 text-gray-500 md:text-xl/relaxed">
                 Kit19 is your comprehensive business platform that combines sales, marketing, social media management, and team communication in one powerful solution.
