@@ -336,7 +336,7 @@ export default function Home() {
                 description: "Our team brings years of industry experience and technical expertise to every project.",
                 icon: <Icon icon="mdi:account-tie" width="64" height="64" className="text-blue-600" />,
               },
-              {
+              { 
                 title: "Innovative Solutions",
                 description: "We stay ahead of technology trends to deliver cutting-edge solutions that give you a competitive edge.",
                 icon: <Icon icon="mdi:lightbulb-on" width="64" height="64" className="text-blue-600" />,
