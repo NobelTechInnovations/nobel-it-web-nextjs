@@ -143,7 +143,7 @@ export default function Home() {
       </section>
 
       {/* Our Products Section */}
-      <section className="w-full py-16 md:py-24 lg:py-32 bg-white relative">
+      <section id="products" className="w-full py-16 md:py-24 lg:py-32 bg-white relative">
         <div className="absolute opacity-75 w-100 right-0 top-0 blur-2xl">
           <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path fill="#cfeeff" d="M28.7,-49.1C42.5,-41.7,62.8,-44.8,70,-38.4C77.3,-31.9,71.6,-16,71.6,0C71.5,15.9,77.1,31.8,71.1,40.4C65,48.9,47.3,50.2,33.6,57.1C19.8,64,9.9,76.6,-2.7,81.3C-15.2,85.9,-30.5,82.5,-39.5,72.9C-48.5,63.2,-51.3,47.2,-49.9,34C-48.6,20.8,-43.1,10.4,-44.7,-0.9C-46.3,-12.2,-55,-24.5,-52.9,-31.8C-50.9,-39.1,-38.1,-41.5,-27.5,-50.7C-16.9,-60,-8.4,-76.1,-0.5,-75.2C7.4,-74.3,14.9,-56.5,28.7,-49.1Z" transform="translate(100 100)" />

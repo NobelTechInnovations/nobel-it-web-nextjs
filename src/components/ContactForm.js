@@ -122,6 +122,7 @@ export default function ContactForm() {
           className="w-full p-3 bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-white/50"
         >
           <option value="" className="bg-blue-600">Select Service</option>
+          <option value="buzzkit-crm" className="bg-blue-600">BuzzKit CRM</option>
           <option value="it-consulting" className="bg-blue-600">IT Consulting</option>
           <option value="web-development" className="bg-blue-600">Web Development</option>
           <option value="cloud-services" className="bg-blue-600">Cloud Services</option>

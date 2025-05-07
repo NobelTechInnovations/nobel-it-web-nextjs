@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
 import { useState, useEffect, useRef } from 'react';
+import ContactForm from '@/components/ContactForm';
 
 export default function BuzzKitPage() {
     const menuItems = [
@@ -72,8 +73,8 @@ export default function BuzzKitPage() {
                             key={item.id}
                             onClick={() => handleTabClick(item.id)}
                             className={`cursor-pointer px-6 py-3 font-semibold text-lg focus:outline-none transition-all duration-200 ${activeTab === item.id
-                                    ? 'text-blue-600 underline underline-offset-8'
-                                    : 'text-black hover:text-blue-600'
+                                ? 'text-blue-600 underline underline-offset-8'
+                                : 'text-black hover:text-blue-600'
                                 }`}
                             aria-current={activeTab === item.id ? 'page' : undefined}
                             id={`tab-${item.id}`}
@@ -831,6 +832,57 @@ export default function BuzzKitPage() {
                     </section>
                 ))}
             </div>
+
+            {/* Contact Card Section */}
+            <section className="w-full py-12 md:py-24 bg-blue-600">
+                <div className="container px-4 md:px-6 mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        {/* Contact Information Card */}
+                        <div className="p-8">
+                            <h2 className="text-3xl font-bold mb-8 text-white">To know more about the BuzzKit CRM contact:</h2>
+                            <div className="space-y-6">
+                                <div className="flex items-start space-x-4 text-white">
+                                    <div className="mt-1">
+                                        <Icon icon="fluent:person-20-filled" className="w-6 h-6" />
+                                    </div>
+                                    <div>
+                                        <h3 className="font-semibold text-lg">Name</h3>
+                                        <h4 className="text-xl">Devanshu Kumar</h4>
+                                        <p className="text-md">Sales Manager</p>
+                                    </div>
+                                </div>
+                                <div className="flex items-start space-x-4 text-white">
+                                    <div className="mt-1">
+                                        <Icon icon="fluent:call-24-filled" className="w-6 h-6" />
+                                    </div>
+                                    <div>
+                                        <h3 className="font-semibold text-lg">Phone</h3>
+                                        <a href="tel:+918235379002" className="hover:underline">+91 823 537 9002</a><br />
+                                        <a href="tel:+919828051996" className="hover:underline">+91 982 805 1996</a>
+                                    </div>
+                                </div>
+                                <div className="flex items-start space-x-4 text-white">
+                                    <div className="mt-1">
+                                        <Icon icon="fluent:mail-24-filled" className="w-6 h-6" />
+                                    </div>
+                                    <div>
+                                        <h3 className="font-semibold text-lg">Email</h3>
+                                        <a href="mailto:nobeltechinnovations@gmail.com" className="hover:underline">
+                                            nobeltechinnovations@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Contact Form */}
+                        <div className="p-8">
+                            <h2 className="text-3xl text-white font-bold mb-8">Send us a Message</h2>
+                            <ContactForm />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     );
 } 
