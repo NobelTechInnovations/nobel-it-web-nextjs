@@ -869,6 +869,7 @@ export default function BuzzKitPage() {
                                         <a href="mailto:devanshu@nobeltechinnovations.com" className="hover:underline">
                                             devanshu@nobeltechinnovations.com
                                         </a>
+                                        <br />
                                         <a href="mailto:info@nobeltechinnovations.com" className="hover:underline">
                                             info@nobeltechinnovations.com
                                         </a>
