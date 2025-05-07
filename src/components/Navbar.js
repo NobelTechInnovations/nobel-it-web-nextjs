@@ -14,6 +14,16 @@ export default function Navbar() {
     setIsClient(true);
   }, []);
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const yOffset = -60; // Adjust this value based on your navbar height
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+      setMobileMenuOpen(false); // Close mobile menu after clicking
+    }
+  };
+
   return (
     <header className="sticky top-0 bg-white z-50">
       <div className="container mx-auto px-4 border-b border-gray-200">
@@ -28,30 +38,28 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             <div className="relative group flex items-center space-x-5">
-              <Link href="/" className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
+              <button onClick={() => scrollToSection('home')} className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
                 Home
-              </Link>
-              <Link href="#about" className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
+              </button>
+              <button onClick={() => scrollToSection('about')} className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
                 About
-              </Link>
-              <Link href="#services" className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
+              </button>
+              <button onClick={() => scrollToSection('products')} className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
+                Products
+              </button>
+              <button onClick={() => scrollToSection('services')} className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
                 Services   
-              </Link>
-              <Link href="#technologies" className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
+              </button>
+              <button onClick={() => scrollToSection('technologies')} className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
                 Tech Stack
-              </Link>
-              <Link href="#whychoose" className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
+              </button>
+              <button onClick={() => scrollToSection('whychoose')} className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
                 Why us
-              </Link>
-              <Link href="#contact" className="flex items-center px-3 py-2 bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors rounded">
+              </button>
+              <button onClick={() => scrollToSection('contact')} className="flex items-center px-3 py-2 bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors rounded">
                 Schedule A Meeting
-              </Link>
-
+              </button>
             </div>
-
-
-
-
           </nav>
 
           {/* Client Support (Desktop) */}
@@ -79,33 +87,36 @@ export default function Navbar() {
         <div className="lg:hidden bg-white border-t border-gray-200 py-4">
           <div className="container mx-auto px-4 max-w-6xl">
             <nav className="flex flex-col space-y-4">
-              <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium py-2">
+              <button onClick={() => scrollToSection('home')} className="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
                 Home
-              </Link>
-              <Link href="#about" className="text-gray-700 hover:text-blue-600 font-medium py-2">
+              </button>
+              <button onClick={() => scrollToSection('about')} className="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
                 About
-              </Link>
-              <Link href="#services" className="text-gray-700 hover:text-blue-600 font-medium py-2">
+              </button>
+              <button onClick={() => scrollToSection('products')} className="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
+                Products
+              </button>
+              <button onClick={() => scrollToSection('services')} className="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
                 Services
-              </Link>
-              <Link href="#technologies" className="text-gray-700 hover:text-blue-600 font-medium py-2">
+              </button>
+              <button onClick={() => scrollToSection('technologies')} className="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
                 Tech Stack
-              </Link>
-              <Link href="#whychoose" className="text-gray-700 hover:text-blue-600 font-medium py-2">
+              </button>
+              <button onClick={() => scrollToSection('whychoose')} className="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
                 Why us
-              </Link>
+              </button>
 
               <div className="pt-4 border-t border-gray-200">
                 <div className="flex items-center justify-between py-2">
                   <span className="text-sm text-gray-600">Client Support</span>
                   <Link href="tel:+919828051996" className="font-medium text-gray-600">+91 98280 51996</Link>
                 </div>
-                <Link
-                  href="#contact"
+                <button
+                  onClick={() => scrollToSection('contact')}
                   className="block w-full text-center px-5 py-2.5 mt-2 bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors rounded"
                 >
                   Schedule A Meeting
-                </Link>
+                </button>
               </div>
             </nav>
           </div>
