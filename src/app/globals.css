@@ -30,7 +30,7 @@ html {
 
 body {
   background: var(--foreground);
-  color: var(--background);
+  /* color: var(--background); */
   font-family: var(--font-body);
 }
 
