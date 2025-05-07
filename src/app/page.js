@@ -189,7 +189,7 @@ export default function Home() {
                 isLaunchingSoon: true
               }
             ].map((product, index) => (
-              <div className="group relative hover:shadow-2xl transition-all duration-300 overflow-hidden rounded-2xl bg-white hover:border-blue-500 border border-gray-300 p-6 transition-all">
+              <div key={index}  className="group relative hover:shadow-2xl transition-all duration-300 overflow-hidden rounded-2xl bg-white hover:border-blue-500 border border-gray-300 p-6 transition-all">
                 <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-gradient-to-br from-blue-50 to-blue-100 blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300" />
                 {product.isLaunchingSoon && (
                   <div className="absolute top-4 right-4 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
