@@ -38,25 +38,25 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             <div className="relative group flex items-center space-x-5">
-              <button onClick={() => scrollToSection('home')} className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
+              <button onClick={() => scrollToSection('home')} className="flex cursor-pointer items-center text-gray-700 hover:text-blue-600 font-semibold hover:border-b border-blue-600">
                 Home
               </button>
-              <button onClick={() => scrollToSection('about')} className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
+              <button onClick={() => scrollToSection('about')} className="flex items-center cursor-pointer text-gray-700 hover:text-blue-600 font-semibold hover:border-b border-blue-600">
                 About
               </button>
-              <button onClick={() => scrollToSection('products')} className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
+              <button onClick={() => scrollToSection('products')} className="flex items-center cursor-pointer text-gray-700 hover:text-blue-600 font-semibold hover:border-b border-blue-600">
                 Products
               </button>
-              <button onClick={() => scrollToSection('services')} className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
+              <button onClick={() => scrollToSection('services')} className="flex items-center cursor-pointer text-gray-700 hover:text-blue-600 font-semibold hover:border-b border-blue-600">
                 Services   
               </button>
-              <button onClick={() => scrollToSection('technologies')} className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
+              <button onClick={() => scrollToSection('technologies')} className="flex items-center cursor-pointer text-gray-700 hover:text-blue-600 font-semibold hover:border-b border-blue-600">
                 Tech Stack
               </button>
-              <button onClick={() => scrollToSection('whychoose')} className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
+              <button onClick={() => scrollToSection('whychoose')} className="flex items-center cursor-pointer text-gray-700 hover:text-blue-600 font-semibold hover:border-b border-blue-600">
                 Why us
               </button>
-              <button onClick={() => scrollToSection('contact')} className="flex items-center px-3 py-2 bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors rounded">
+              <button onClick={() => scrollToSection('contact')} className="flex items-center cursor-pointer px-3 py-2 bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors rounded">
                 Schedule A Meeting
               </button>
             </div>
