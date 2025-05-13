@@ -46,7 +46,7 @@ export default function Home() {
       </section>
 
       {/* Google clutch */}
-      <section className="container mx-auto px-4">
+      <section className="container mx-auto px-4 hidden">
         <div className="py-10">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             <div className="flex flex-col items-center md:items-start">
