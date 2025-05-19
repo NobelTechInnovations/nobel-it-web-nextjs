@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,11 +54,18 @@ export default function RootLayout({ children }) {
         <meta property="og:locale" content={metadata.openGraph.locale} />
         <meta property="og:type" content={metadata.openGraph.type} />
         <link rel="manifest" href={metadata.manifest} />
+
+        <meta name="google-site-verification" content="e2tdCM-xbdTFGwcfnBjEddwmYg1_cLA2AahOIYmfd0I" />
+        
+        {/* Bing Webmaster Tools */}
+        <meta name="msvalidate.01" content="F98AE0F53D21F68C13C215572D8F39B6"/>
+
         {/* Google Tag Manager Script */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-2MZ12YCCMX"
         ></script>
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -67,9 +75,11 @@ export default function RootLayout({ children }) {
               gtag('config', 'G-2MZ12YCCMX');
             `,
           }}
-        />
+        ></script>
+        {/* Google Tag Manager */}
       </Head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <Analytics/>
         <Navbar />
         {children}
         <Footer />
