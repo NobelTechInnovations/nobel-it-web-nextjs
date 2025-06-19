@@ -31,7 +31,7 @@ export function initEmailJS() {
 // The current values are likely incorrect or incomplete
 export const EMAILJS_SERVICE_ID = 'service_m4zx2g9'; 
 export const EMAILJS_TEMPLATE_ID = 'template_e50z3rr';
-export const EMAILJS_PUBLIC_KEY = 'IcYcd_bCK5ASUSf69_Hsg'; // Fixed the public key
+export const EMAILJS_PUBLIC_KEY = '-2obUXwdr66b21Y9-'; // Fixed the public key
 
 /**
  * TROUBLESHOOTING TIP:
