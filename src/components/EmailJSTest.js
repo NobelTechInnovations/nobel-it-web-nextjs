@@ -12,7 +12,7 @@ export default function EmailJSTest() {
     // Replace these with your actual EmailJS values
     const serviceId = 'service_m4zx2g9';
     const templateId = 'template_e50z3rr';
-    const publicKey = 'IcYcd_bCK5ASUSf69'; // This appears to be incomplete, get the complete key
+    const publicKey = '-2obUXwdr66b21Y9-'; // This appears to be incomplete, get the complete key
 
     // Get form values directly
     const name = form.current.user_name.value;
