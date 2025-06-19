@@ -170,19 +170,19 @@ export default function Home() {
                 knowmore: "Know More",
                 isLaunchingSoon: false
               },
+            //   {
+            //     name: "CedarSync",
+            //     tagline: "All Marketplace solutions in one place",
+            //     description: "Effortlessly manage listings, orders, and inventory across multiple platforms with CedarSync—your all-in-one marketplace solution.",
+            //     icon: <Icon icon="emojione-v1:three-networked-computers" width="48" height="48" />,
+            //     link: "#",
+            //     knowmore: "Know More",
+            //     isLaunchingSoon: true
+            //   },
               {
-                name: "CedarSync",
-                tagline: "All Marketplace solutions in one place",
-                description: "Effortlessly manage listings, orders, and inventory across multiple platforms with CedarSync—your all-in-one marketplace solution.",
-                icon: <Icon icon="emojione-v1:three-networked-computers" width="48" height="48" />,
-                link: "#",
-                knowmore: "Know More",
-                isLaunchingSoon: true
-              },
-              {
-                name: "Agora Marketplace",
+                name: "Snapzo",
                 tagline: "Instant Delivery App",
-                description: "Agora Marketplace is a new instant delivery app that promises to deliver products to users in just a wink.",
+                description: "Sanpzo is a new instant delivery app that promises to deliver products to users in just a click.",
                 icon: <Icon icon="emojione-v1:three-networked-computers" width="48" height="48" />,
                 link: "#",
                 knowmore: "Know More",
