@@ -60,8 +60,8 @@ const Footer = () => {
               <div>
                 <p className="font-semibold text-gray-200">Address</p>
                 <address className="text-gray-400 not-italic">
-                  Atulya Chordia Building<br />
-                  Kamla Nehru Nagar<br />
+                  Plot No. 29-30<br />
+                  Jivan Vihar Gajsinghpura Mansarovar<br />
                   Jaipur, Rajasthan, India
                 </address>
               </div>
@@ -79,8 +79,9 @@ const Footer = () => {
               <div><Icon icon="emojione-v1:mobile-phone" width="24" height="24" /></div>
               <div>
                 <p className="font-semibold">Phone</p>
-                <a href="tel:+919828051996" className="text-gray-400 hover:text-blue-400 hover:underline">+(91) 982 805 1996</a><br />
-                <a href="tel:+918079076815" className="text-gray-400 hover:text-blue-400 hover:underline">+(91) 807 907 6815</a>
+                <a href="tel:+919828051996" className="text-gray-400 hover:text-blue-400 hover:underline">+(91) 9828051996</a><br />
+                <a href="tel:+918079076815" className="text-gray-400 hover:text-blue-400 hover:underline">+(91) 8949333672</a><br />
+                <a href="tel:+918079076815" className="text-gray-400 hover:text-blue-400 hover:underline">+(91) 9509285579</a>
               </div>
             </div>
           </div>
