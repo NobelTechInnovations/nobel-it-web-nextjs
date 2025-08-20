@@ -20,6 +20,12 @@ module.exports = {
           '100%': { transform: 'translateX(-50%)' },
         },
       },
+      colors: {
+        blue: {
+          600: '#6161FF',
+          700: '#5151D5',
+        }
+      }
     },
   },
   plugins: [],

@@ -4,7 +4,7 @@ export default function About() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* About Hero */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-600">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-[#6161FF]">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center space-y-4 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-white">
@@ -129,7 +129,7 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-600">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-[#6161FF]">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-white">

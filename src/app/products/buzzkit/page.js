@@ -52,7 +52,7 @@ export default function BuzzKitPage() {
     return (
         <main className="flex min-h-screen flex-col">
             {/* Hero Section */}
-            <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-600">
+            <section className="w-full py-12 md:py-24 lg:py-32 bg-[#6161FF]">
                 <div className="container px-4 md:px-6 mx-auto">
                     <div className="flex flex-col items-center space-y-4 text-center">
                         <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-white">
@@ -73,8 +73,8 @@ export default function BuzzKitPage() {
                             key={item.id}
                             onClick={() => handleTabClick(item.id)}
                             className={`cursor-pointer px-6 py-3 font-semibold text-lg focus:outline-none transition-all duration-200 ${activeTab === item.id
-                                ? 'text-blue-600 underline underline-offset-8'
-                                : 'text-black hover:text-blue-600'
+                                ? 'text-[#6161FF] underline underline-offset-8'
+                                : 'text-black hover:text-[#6161FF]'
                                 }`}
                             aria-current={activeTab === item.id ? 'page' : undefined}
                             id={`tab-${item.id}`}
@@ -97,7 +97,7 @@ export default function BuzzKitPage() {
                                 <h2 className="text-3xl font-bold mb-8">Sales</h2>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl px-3">
                                     {/* 1. AutoLead Capturing */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">1. AutoLead Capturing</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -110,7 +110,7 @@ export default function BuzzKitPage() {
                                                 'Google Integration'
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -121,7 +121,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* 2. Enquiry / Lead Management */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">2. Enquiry / Lead Management</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -134,7 +134,7 @@ export default function BuzzKitPage() {
                                                 'Hidden fields / masking to protect lead\'s confidential information'
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -145,7 +145,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* 3. Pipeline Management */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">3. Pipeline Management</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -156,7 +156,7 @@ export default function BuzzKitPage() {
                                                 'Filter leads based on expiry dates, closure dates, sales executive, etc.'
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -167,7 +167,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* 4. Sales Goals */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">4. Sales Goals</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -178,7 +178,7 @@ export default function BuzzKitPage() {
                                                 'Filter goals based on currency, pipeline stages, or products'
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -189,7 +189,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* 5. Quotations, Invoices, Payments & Ledger */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500 md:col-span-2 lg:col-span-2">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF] md:col-span-2 lg:col-span-2">
                                         <h3 className="text-xl font-semibold mb-4">5. Quotations, Invoices, Payments & Ledger</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -205,7 +205,7 @@ export default function BuzzKitPage() {
                                                 'View / Print customer ledger'
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -222,7 +222,7 @@ export default function BuzzKitPage() {
                                 <h2 className="text-3xl font-bold mb-8">Marketing</h2>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl px-3">
                                     {/* 1. Campaigns */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">1. Campaigns</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -236,7 +236,7 @@ export default function BuzzKitPage() {
                                                 'Google Adwords Campaign',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -247,7 +247,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* 2. Landing Pages */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">2. Landing Pages</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -260,7 +260,7 @@ export default function BuzzKitPage() {
                                                 'Host on Self Domain',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -271,7 +271,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* 3. Webform */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">3. Webform</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -287,7 +287,7 @@ export default function BuzzKitPage() {
                                                 'Host on Self Domain',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -298,7 +298,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* 4. Digital Campaign */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">4. Digital Campaign</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -308,7 +308,7 @@ export default function BuzzKitPage() {
                                                 'Pre-created audience and automated content for faster publishing',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -319,7 +319,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* 5. Email Integration */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">5. Email Integration</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -334,7 +334,7 @@ export default function BuzzKitPage() {
                                                 'Perform actions like creating tasks/appointments/tickets or sending mail for parsing',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -345,7 +345,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* 6. Social Media Integration */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">6. Social Media Integration</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -358,7 +358,7 @@ export default function BuzzKitPage() {
                                                 'Integration link with YouTube, Twitter & Instagram',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -369,7 +369,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* 7. Private Short URL */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">7. Private Short URL</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -381,7 +381,7 @@ export default function BuzzKitPage() {
                                                 'SSL Certification',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -398,7 +398,7 @@ export default function BuzzKitPage() {
                                 <h2 className="text-3xl font-bold mb-8">Lead & Customer Engagement</h2>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl px-3">
                                     {/* 1. Cloud Telephony */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">1. Cloud Telephony</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -412,7 +412,7 @@ export default function BuzzKitPage() {
                                                 'Voice Broadcast',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -423,7 +423,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* 2. Online Meeting */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">2. Online Meeting</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -438,7 +438,7 @@ export default function BuzzKitPage() {
                                                 'Restrict participants based on your criteria.',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -449,7 +449,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* 3. Chatbot */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">3. Chatbot</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -460,7 +460,7 @@ export default function BuzzKitPage() {
                                                 'Boost brand presence and customer loyalty with personalized chatbot experiences.',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -471,7 +471,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* 4. Task & Appointment Management */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">4. Task & Appointment Management</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -484,7 +484,7 @@ export default function BuzzKitPage() {
                                                 'Track Result of Each Appointment',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -495,7 +495,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* 5. Docs Library */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500 lg:col-span-2">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF] lg:col-span-2">
                                         <h3 className="text-xl font-semibold mb-4">5. Docs Library</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -506,7 +506,7 @@ export default function BuzzKitPage() {
                                                 'Eliminate the need for constant back-and-forth between your desktop and CRM.',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -522,7 +522,7 @@ export default function BuzzKitPage() {
                             <>
                                 <h2 className="text-3xl font-bold mb-8">Customer Service</h2>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl px-3">
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">1. Ticket Management</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -538,7 +538,7 @@ export default function BuzzKitPage() {
                                                 'Detailed Report',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -555,7 +555,7 @@ export default function BuzzKitPage() {
                                 <h2 className="text-3xl font-bold mb-8">Team Productivity</h2>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl px-3">
                                     {/* Field Force Management */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">1. Field Force Management</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -569,7 +569,7 @@ export default function BuzzKitPage() {
                                                 'Team Collaboration / Comments for meetings',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -580,7 +580,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* Elevate Collaboration with Team Chat */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500 lg:col-span-2">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF] lg:col-span-2">
                                         <h3 className="text-xl font-semibold mb-4">2. Elevate Collaboration with Team Chat</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -596,7 +596,7 @@ export default function BuzzKitPage() {
                                                 'Create public groups to broadcast company announcements.',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -607,7 +607,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* Workflows */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500 lg:col-span-2">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF] lg:col-span-2">
                                         <h3 className="text-xl font-semibold mb-4">3. Workflows</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -624,7 +624,7 @@ export default function BuzzKitPage() {
                                                 'Say goodbye to chaos—let automated workflows handle the process for you.',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -635,7 +635,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* Mobile Application */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">4. Mobile Application</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -649,7 +649,7 @@ export default function BuzzKitPage() {
                                                 'Get historic location reports',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -660,7 +660,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* Staff Time Tracker */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500 lg:col-span-2">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF] lg:col-span-2">
                                         <h3 className="text-xl font-semibold mb-4">5. Staff Time Tracker</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -678,7 +678,7 @@ export default function BuzzKitPage() {
                                                 'Customize unproductive apps & know how long employees spent on these apps',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -695,7 +695,7 @@ export default function BuzzKitPage() {
                                 <h2 className="text-3xl font-bold mb-8">Tools</h2>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl px-3">
                                     {/* Control Access & Activities with Roles */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">1. Control Access & Activities with Roles</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -707,7 +707,7 @@ export default function BuzzKitPage() {
                                                 'Audit user\'s activity (coming soon)',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -718,7 +718,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* WhatsApp Messenger */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500 lg:col-span-2">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF] lg:col-span-2">
                                         <h3 className="text-xl font-semibold mb-4">2. WhatsApp Messenger</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -738,7 +738,7 @@ export default function BuzzKitPage() {
                                                 'Chatbot integration',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -749,7 +749,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* WhatsApp Automation */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">3. WhatsApp Automation</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -760,7 +760,7 @@ export default function BuzzKitPage() {
                                                 'Capture user\'s input in lead details',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -771,7 +771,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* WhatsApp Commerce */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500 lg:col-span-2">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF] lg:col-span-2">
                                         <h3 className="text-xl font-semibold mb-4">4. WhatsApp Commerce</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -786,7 +786,7 @@ export default function BuzzKitPage() {
                                                 'Capitalize on WhatsApp\'s growing popularity for eCommerce',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -797,7 +797,7 @@ export default function BuzzKitPage() {
                                         </ul>
                                     </div>
                                     {/* SMS / Mail / Google Business Messaging */}
-                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-blue-500">
+                                    <div className="bg-white rounded-xl shadow p-6 flex flex-col border border-[#6161FF]">
                                         <h3 className="text-xl font-semibold mb-4">5. SMS / Mail / Google Business Messaging</h3>
                                         <ul className="space-y-3">
                                             {[
@@ -811,7 +811,7 @@ export default function BuzzKitPage() {
                                                 'SMS with Insta Connect',
                                             ].map((text, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm">
-                                                    <span className="mt-1 text-blue-600">
+                                                    <span className="mt-1 text-[#6161FF]">
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                                         </svg>
@@ -834,14 +834,14 @@ export default function BuzzKitPage() {
             </div>
 
             {/* Contact Card Section */}
-            <section className="w-full py-12 md:py-24 bg-blue-600">
+            <section className="w-full py-12 md:py-24 bg-[#F0F3FF]">
                 <div className="container px-4 md:px-6 mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {/* Contact Information Card */}
                         <div className="p-8">
-                            <h2 className="text-3xl font-bold mb-8 text-white">To know more about the BuzzKit CRM contact:</h2>
+                            <h2 className="text-3xl font-bold mb-8 ">To know more about the BuzzKit CRM contact:</h2>
                             <div className="space-y-6">
-                                <div className="flex items-start space-x-4 text-white">
+                                <div className="flex items-start space-x-4 ">
                                     <div className="mt-1">
                                         <Icon icon="fluent:person-20-filled" className="w-6 h-6" />
                                     </div>
@@ -850,7 +850,7 @@ export default function BuzzKitPage() {
                                         <h4 className="text-xl">Devanshu Kumar</h4>
                                     </div>
                                 </div>
-                                <div className="flex items-start space-x-4 text-white">
+                                <div className="flex items-start space-x-4 ">
                                     <div className="mt-1">
                                         <Icon icon="fluent:call-24-filled" className="w-6 h-6" />
                                     </div>
@@ -860,7 +860,7 @@ export default function BuzzKitPage() {
                                         <a href="tel:+919828051996" className="hover:underline">+91 98280 51996</a>
                                     </div>
                                 </div>
-                                <div className="flex items-start space-x-4 text-white">
+                                <div className="flex items-start space-x-4 ">
                                     <div className="mt-1">
                                         <Icon icon="fluent:mail-24-filled" className="w-6 h-6" />
                                     </div>
@@ -880,7 +880,7 @@ export default function BuzzKitPage() {
 
                         {/* Contact Form */}
                         <div className="p-8">
-                            <h2 className="text-3xl text-white font-bold mb-8">Send us a Message</h2>
+                            <h2 className="text-3xl font-bold mb-8">Send us a Message</h2>
                             <ContactForm />
                         </div>
                     </div>

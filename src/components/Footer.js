@@ -94,7 +94,7 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Email address"
-                  className="w-full p-3 bg-transparent border border-gray-700 text-white  focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full p-3 bg-transparent border border-gray-700 text-white  focus:outline-none focus:ring-1 focus:ring-[#6161FF] focus:border-[#6161FF]"
                 />
               </div>
               <div className="flex items-start space-x-2">
@@ -110,7 +110,7 @@ const Footer = () => {
               <div>
                 <button
                   type="submit"
-                  className="px-3 py-2 bg-blue-600 text-white font-medium  hover:bg-blue-700 transition-colors flex items-center"
+                  className="px-6 py-2 bg-[#6161FF] text-white font-medium  hover:bg-[#5151D5] transition-colors flex items-center"
                 >
                   Send
                   <svg

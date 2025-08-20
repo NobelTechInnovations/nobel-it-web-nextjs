@@ -95,7 +95,7 @@ export default function ContactForm() {
           name="user_name"
           placeholder="Full Name"
           required
-          className="w-full p-3 bg-white/20 border border-white/30 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+          className="w-full p-3 bg-white/20 border border-gray-300  placeholder:/60 focus:outline-none focus:ring-2 focus:ring-white/50"
         />
       </div>
       <div>
@@ -104,7 +104,7 @@ export default function ContactForm() {
           name="user_email"
           placeholder="Email Address"
           required
-          className="w-full p-3 bg-white/20 border border-white/30 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+          className="w-full p-3 bg-white/20 border border-gray-300  placeholder:/60 focus:outline-none focus:ring-2 focus:ring-white/50"
         />
       </div>
       <div>
@@ -112,21 +112,21 @@ export default function ContactForm() {
           type="tel"
           name="phone"
           placeholder="Phone Number (Optional)"
-          className="w-full p-3 bg-white/20 border border-white/30 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+          className="w-full p-3 bg-white/20 border border-gray-300  placeholder:/60 focus:outline-none focus:ring-2 focus:ring-white/50"
         />
       </div>
       <div>
         <select 
           name="service"
           required
-          className="w-full p-3 bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+          className="w-full p-3 bg-white/20 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-white/50"
         >
-          <option value="" className="bg-blue-600">Select Service</option>
-          <option value="buzzkit-crm" className="bg-blue-600">BuzzKit CRM</option>
-          <option value="it-consulting" className="bg-blue-600">IT Consulting</option>
-          <option value="web-development" className="bg-blue-600">Web Development</option>
-          <option value="cloud-services" className="bg-blue-600">Cloud Services</option>
-          <option value="cyber-security" className="bg-blue-600">Cyber Security</option>
+          <option value="" className="bg-[#6161FF]">Select Service</option>
+          <option value="buzzkit-crm" className="bg-[#6161FF]">BuzzKit CRM</option>
+          <option value="it-consulting" className="bg-[#6161FF]">IT Consulting</option>
+          <option value="web-development" className="bg-[#6161FF]">Web Development</option>
+          <option value="cloud-services" className="bg-[#6161FF]">Cloud Services</option>
+          <option value="cyber-security" className="bg-[#6161FF]">Cyber Security</option>
         </select>
       </div>
       <div>
@@ -135,7 +135,7 @@ export default function ContactForm() {
           placeholder="Your Message"
           rows="4"
           required
-          className="w-full p-3 bg-white/20 border border-white/30 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+          className="w-full p-3 bg-white/20 border border-gray-300  placeholder:/60 focus:outline-none focus:ring-2 focus:ring-white/50"
         ></textarea>
       </div>
       
@@ -146,13 +146,15 @@ export default function ContactForm() {
       )}
       
       <div>
-        <button 
-          type="submit"
-          disabled={formStatus.submitting}
-          className={`w-full px-3 py-2 bg-white text-blue-600 font-medium hover:bg-gray-100 transition-colors ${formStatus.submitting ? 'opacity-70 cursor-not-allowed' : ''}`}
-        >
-          {formStatus.submitting ? 'Sending...' : 'Submit Request'}
-        </button>
+      <button 
+        type="submit"
+        disabled={formStatus.submitting}
+        className={`px-6 py-2 bg-white text-[#6161FF] font-medium border border-[#6161FF] rounded-full hover:bg-[#F0F3FF] transition-colors ${
+          formStatus.submitting ? 'opacity-70 cursor-not-allowed' : ''
+        }`}
+      >
+        {formStatus.submitting ? 'Sending...' : 'Submit Request'}
+      </button>
       </div>
     </form>
   );

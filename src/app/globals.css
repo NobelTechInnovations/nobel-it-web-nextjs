@@ -4,10 +4,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #ffffff;
+  --background: #fcfcf9;
+  --foreground: #fcfcf9;
   --font-body: 'Open Sans', sans-serif;
   --font-heading: 'PT Sans', sans-serif;
+}
+.bg-cream{
+  background-color: #fcfcf9 !important;
 }
 
 @theme inline {
@@ -20,7 +23,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #fff;
+    --foreground: #fcfcf9;
   }
 }
 
@@ -59,7 +62,6 @@ h6 {
 .carousel-track:hover {
   animation-play-state: paused;
 }
-
 .carousel-item {
   flex: 0 0 auto;
   padding: 0 2rem;

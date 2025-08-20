@@ -25,7 +25,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 bg-white z-50">
+    <header className="sticky top-0 bg-cream z-50">
       <div className="container mx-auto px-4 border-b border-gray-200">
         <div className="flex justify-between items-center h-15">
           {/* Logo */}
@@ -38,25 +38,25 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             <div className="relative group flex items-center space-x-5">
-              <button onClick={() => scrollToSection('home')} className="flex cursor-pointer items-center text-gray-700 hover:text-blue-600 font-semibold hover:border-b border-blue-600">
+              <button onClick={() => scrollToSection('home')} className="flex cursor-pointer items-center text-gray-700 hover:text-[#6161FF] font-semibold hover:border-b border-[#6161FF]">
                 Home
               </button>
-              <button onClick={() => scrollToSection('about')} className="flex items-center cursor-pointer text-gray-700 hover:text-blue-600 font-semibold hover:border-b border-blue-600">
+              <button onClick={() => scrollToSection('about')} className="flex items-center cursor-pointer text-gray-700 hover:text-[#6161FF] font-semibold hover:border-b border-[#6161FF]">
                 About
               </button>
-              <button onClick={() => scrollToSection('products')} className="flex items-center cursor-pointer text-gray-700 hover:text-blue-600 font-semibold hover:border-b border-blue-600">
+              <button onClick={() => scrollToSection('products')} className="flex items-center cursor-pointer text-gray-700 hover:text-[#6161FF] font-semibold hover:border-b border-[#6161FF]">
                 Products
               </button>
-              <button onClick={() => scrollToSection('services')} className="flex items-center cursor-pointer text-gray-700 hover:text-blue-600 font-semibold hover:border-b border-blue-600">
+              <button onClick={() => scrollToSection('services')} className="flex items-center cursor-pointer text-gray-700 hover:text-[#6161FF] font-semibold hover:border-b border-[#6161FF]">
                 Services   
               </button>
-              <button onClick={() => scrollToSection('technologies')} className="flex items-center cursor-pointer text-gray-700 hover:text-blue-600 font-semibold hover:border-b border-blue-600">
+              <button onClick={() => scrollToSection('technologies')} className="flex items-center cursor-pointer text-gray-700 hover:text-[#6161FF] font-semibold hover:border-b border-[#6161FF]">
                 Tech Stack
               </button>
-              <button onClick={() => scrollToSection('whychoose')} className="flex items-center cursor-pointer text-gray-700 hover:text-blue-600 font-semibold hover:border-b border-blue-600">
+              <button onClick={() => scrollToSection('whychoose')} className="flex items-center cursor-pointer text-gray-700 hover:text-[#6161FF] font-semibold hover:border-b border-[#6161FF]">
                 Why us
               </button>
-              <button onClick={() => scrollToSection('contact')} className="flex items-center cursor-pointer px-3 py-2 bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors rounded">
+              <button onClick={() => scrollToSection('contact')} className="flex items-center cursor-pointer px-6 py-2 bg-[#6161FF] text-white font-medium hover:bg-[#5151D5] transition-colors rounded">
                 Schedule A Meeting
               </button>
             </div>
@@ -87,22 +87,22 @@ export default function Navbar() {
         <div className="lg:hidden bg-white border-t border-gray-200 py-4">
           <div className="container mx-auto px-4 max-w-6xl">
             <nav className="flex flex-col space-y-4">
-              <button onClick={() => scrollToSection('home')} className="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
+              <button onClick={() => scrollToSection('home')} className="text-left text-gray-700 hover:text-[#6161FF] font-medium py-2">
                 Home
               </button>
-              <button onClick={() => scrollToSection('about')} className="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
+              <button onClick={() => scrollToSection('about')} className="text-left text-gray-700 hover:text-[#6161FF] font-medium py-2">
                 About
               </button>
-              <button onClick={() => scrollToSection('products')} className="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
+              <button onClick={() => scrollToSection('products')} className="text-left text-gray-700 hover:text-[#6161FF] font-medium py-2">
                 Products
               </button>
-              <button onClick={() => scrollToSection('services')} className="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
+              <button onClick={() => scrollToSection('services')} className="text-left text-gray-700 hover:text-[#6161FF] font-medium py-2">
                 Services
               </button>
-              <button onClick={() => scrollToSection('technologies')} className="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
+              <button onClick={() => scrollToSection('technologies')} className="text-left text-gray-700 hover:text-[#6161FF] font-medium py-2">
                 Tech Stack
               </button>
-              <button onClick={() => scrollToSection('whychoose')} className="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
+              <button onClick={() => scrollToSection('whychoose')} className="text-left text-gray-700 hover:text-[#6161FF] font-medium py-2">
                 Why us
               </button>
 
@@ -113,7 +113,7 @@ export default function Navbar() {
                 </div>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="block w-full text-center px-5 py-2.5 mt-2 bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors rounded"
+                  className="block w-full text-center px-5 py-2.5 mt-2 bg-[#6161FF] text-white font-medium hover:bg-[#5151D5] transition-colors rounded"
                 >
                   Schedule A Meeting
                 </button>
