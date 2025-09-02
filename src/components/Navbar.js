@@ -25,6 +25,7 @@ export default function Navbar() {
   };
 
   return (
+    <>
     <header className="sticky top-0 bg-cream z-50">
       <div className="container mx-auto px-4 border-b border-gray-200">
         <div className="flex justify-between items-center h-15">
@@ -123,5 +124,8 @@ export default function Navbar() {
         </div>
       )}
     </header>
+   
+   
+          </>
   );
 } 

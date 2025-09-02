@@ -127,8 +127,109 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Our Martkeign plans */}
+      <section id="services" className="w-full py-16 md:py-24 lg:py-32 relative bg-white">
+        {/* Background Image with Overlay */}
+
+        <div className="absolute opacity-75 w-100 right-0 top-0 -z-10 blur-2xl">
+          <svg viewBox="0 0 200 200" className='up-down' xmlns="http://www.w3.org/2000/svg">
+            <path fill="#D0E2FF" d="M44.4,-67.4C57.8,-60.5,69.2,-48.6,77.4,-34.3C85.6,-19.9,90.6,-3.1,89.6,13.8C88.5,30.6,81.5,47.5,69.5,58.7C57.5,69.8,40.6,75.2,25.5,73.6C10.5,71.9,-2.8,63.1,-16.6,58.3C-30.5,53.5,-45,52.5,-53.1,45C-61.2,37.5,-62.8,23.4,-64.7,9.4C-66.7,-4.7,-68.9,-18.6,-63.4,-28.3C-57.9,-38,-44.7,-43.5,-32.8,-51.1C-21,-58.7,-10.5,-68.4,2.5,-72.3C15.5,-76.3,31,-74.3,44.4,-67.4Z" transform="translate(100 100)" />
+          </svg>
+        </div>
+        <div className="container px-4 md:px-6 mx-auto z-10">
+
+          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
+            <span className="text-[#6161FF] font-semibold text-sm tracking-wider uppercase">How we works</span>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-slate-900">
+                One Brand.{" "}
+                <span className="relative inline-block text-[#6161FF]">
+                  Every Platform
+                  <motion.svg
+                    className="absolute left-0 -bottom-1 w-full h-5"
+                    viewBox="0 0 500 150"
+                    preserveAspectRatio="none"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <motion.path
+                      d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"
+                      stroke="#FF4500"
+                      strokeWidth="24"
+                      fill="transparent"
+                      strokeDasharray="1000"
+                      strokeDashoffset="1000"
+                      initial={{ strokeDashoffset: 1000 }}
+                      whileInView={{ strokeDashoffset: 0 }}
+                      transition={{ duration: 1, ease: "easeInOut" }}
+                    />
+                  </motion.svg>
+                </span>
+              </h2>
+            <p className="max-w-[700px] md:text-gray-600 text-slate-900 text-lg leading-relaxed">
+            <b>Nobel Strategy</b>, our comprehensive suite of IT and marketing solutions is built to empower businesses in the digital era.
+            </p>
+          </div>
+          <div className="grid grid-cols-12 gap-8 mt-8">
+            {[
+              
+              {
+                title: "Engage Audiences Through Facebook Marketing",
+                description: "Turn Facebook into your brand’s growth engine! With precision ad targeting and scroll-stopping creatives, we make sure your message connects where it matters most. From bold visuals to persuasive storytelling, our campaigns spark engagement, build communities, and convert audiences into loyal customers.",
+                icon: <Icon icon="lucide:code-2" width="64" height="64" />,
+                img:"/fb-ads.webp",
+                color: "bg-purple-50 text-purple-600",
+              },
+              {
+                title: "Build Your Brand Presence on Instagram",
+                description: "Elevate your brand on Instagram with the perfect blend of creativity and strategy! From eye-catching posts to trend-savvy reels, we design content that captivates. Paired with precision-targeted ads, your brand reaches the right audience, grows faster, and turns followers into customers on India’s favourite visual stage.",
+                icon: <Icon icon="tabler:device-mobile-code" width="64" height="64" />,
+                img:"/insta-ads.webp",
+                color: "bg-blue-50 text-[#6161FF]",
+              },
+              {
+                title: "Boost Your Business with Google Ads & SEO",
+                description: "Take your brand to the next level with the perfect mix of Google Ads and SEO. While ads deliver instant visibility and fast results, SEO builds long-term credibility and consistent traffic. Together, they ensure your business gets discovered, trusted, and chosen—today and tomorrow",
+                icon: <Icon icon="lucide:megaphone" width="64" height="64" />,
+                img:"/google-ads.webp",
+                color: "bg-purple-50 text-purple-600",
+              },
+              {
+                title: "Tell Your Story, Amplify with YouTube Ads",
+                description: "Bring your brand story to life on YouTube! We create compelling videos that capture attention and connect with your audience on an emotional level. Combined with smart ad campaigns, your content reaches millions, builds a loyal community, and turns views into lasting results—all across India’s biggest video platform.",
+                icon: <Icon icon="tabler:cloud-cog" width="64" height="64" />,
+                img:"/yt-ads.webp",
+                color: "bg-green-50 text-green-600",
+              },
+              
+            ].map((value, index) => (
+              <div
+                key={index}
+                className="col-span-12 md:col-span-6 glass_effect hover:border-[#6161FF] border border-gray-300 lg:col-span-3 group relative overflow-hidden rounded-2xl p-8 hover:shadow-xl transition-all duration-300"
+              >
+                <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-gradient-to-br from-blue-50 to-blue-100 blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300" />
+                <div className="relative space-y-4">
+                  <h3 className="text-2xl font-bold text-slate-900">{value.title}</h3>
+                  {/* <div className="block mb-4">{value.icon}</div> */}
+                  <div className='block mb-4'>
+                    <img src={value.img} />
+                  </div>
+                  <p className="text-gray-600 text-sm">{value.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+        <div className="absolute opacity-75 w-100 -left-4 -bottom-4 -z-10 blur-2xl">
+          <svg viewBox="0 0 200 200" className='up-down' xmlns="http://www.w3.org/2000/svg">
+            <path fill="#9EF0F0" d="M27.8,-52.3C36.3,-43.3,43.4,-36.3,48.9,-27.9C54.3,-19.5,58,-9.7,63.9,3.4C69.7,16.5,77.8,33,73.6,43.6C69.4,54.1,53,58.7,38.7,60C24.4,61.2,12.2,59.1,-1.1,61.1C-14.5,63,-28.9,69.1,-37.9,64.8C-46.9,60.5,-50.4,45.8,-57.1,33.2C-63.8,20.7,-73.8,10.4,-78.4,-2.7C-83.1,-15.7,-82.4,-31.5,-72.8,-39.1C-63.3,-46.7,-44.8,-46.1,-31.2,-52.1C-17.5,-58,-8.8,-70.5,0.5,-71.3C9.7,-72.1,19.4,-61.2,27.8,-52.3Z" transform="translate(100 100)" />
+          </svg>
+        </div>
+      </section>
+
+
       {/* About Us Section */}
-      <section id="about" className="w-full py-16 md:py-24 lg:py-32 relative bg-white">
+      <section id="about" className="w-full py-16 md:py-24 lg:py-32 relative bg-white hidden">
         <div className="absolute w-100 top-4 left-4 -z-10 blur-2xl">
           <svg viewBox="0 0 200 200" className='up-down' xmlns="http://www.w3.org/2000/svg">
             <path fill="#E8DAFF" d="M34.6,-51C45.8,-46.8,56.2,-38.6,60.3,-28C64.3,-17.5,61.8,-4.5,58,7C54.3,18.5,49.2,28.4,43.1,39.6C36.9,50.9,29.6,63.4,19.2,67.2C8.9,71.1,-4.6,66.2,-19.2,63C-33.9,59.8,-49.7,58.3,-55.5,49.4C-61.2,40.4,-56.9,24,-54.5,10.6C-52.2,-2.8,-51.9,-13.2,-51.9,-28.1C-51.9,-43,-52.2,-62.4,-43.6,-67.8C-35.1,-73.1,-17.5,-64.5,-2.9,-60C11.8,-55.5,23.5,-55.2,34.6,-51Z" transform="translate(100 100)" />
@@ -262,7 +363,7 @@ export default function Home() {
                 isLaunchingSoon: true
               }
             ].map((product, index) => (
-              <div key={index}  className="group relative hover:shadow-2xl transition-all duration-300 overflow-hidden rounded-2xl  hover:border-[#6161FF] border border-gray-300 p-6 transition-all">
+              <div key={index}  className="group relative hover:shadow-xl transition-all duration-300 overflow-hidden rounded-2xl  hover:border-[#6161FF] border border-gray-300 p-6 transition-all">
                 <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-gradient-to-br from-blue-50 to-blue-100 blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300" />
                 {product.isLaunchingSoon && (
                   <div className="absolute top-4 right-4 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -371,7 +472,7 @@ export default function Home() {
             ].map((value, index) => (
               <div
                 key={index}
-                className="col-span-12 md:col-span-6 glass_effect hover:border-[#6161FF] border border-gray-300 lg:col-span-4 group relative overflow-hidden rounded-2xl p-8 hover:shadow-2xl transition-all duration-300"
+                className="col-span-12 md:col-span-6 glass_effect hover:border-[#6161FF] border border-gray-300 lg:col-span-4 group relative overflow-hidden rounded-2xl p-8 hover:shadow-xl transition-all duration-300"
               >
                 <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-gradient-to-br from-blue-50 to-blue-100 blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300" />
                 <div className="relative space-y-4">
@@ -513,7 +614,7 @@ export default function Home() {
                 icon: <Icon icon="mdi:clock-time-four" width="64" height="64" className="text-[#6161FF]" />,
               },
             ].map((item, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-2xl  hover:border-[#6161FF] border border-gray-300 hover:shadow-2xl p-6 transition-all duration-300">
+              <div key={index} className="group relative overflow-hidden rounded-2xl  hover:border-[#6161FF] border border-gray-300 hover:shadow-xl p-6 transition-all duration-300">
                 <div className="relative space-y-4">
                   <div className="flex justify-center">
                     {item.icon}
