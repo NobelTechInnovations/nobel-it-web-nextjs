@@ -227,73 +227,6 @@ export default function Home() {
         </div>
       </section>
 
-
-      {/* About Us Section */}
-      <section id="about" className="w-full py-16 md:py-24 lg:py-32 relative bg-white hidden">
-        <div className="absolute w-100 top-4 left-4 -z-10 blur-2xl">
-          <svg viewBox="0 0 200 200" className='up-down' xmlns="http://www.w3.org/2000/svg">
-            <path fill="#E8DAFF" d="M34.6,-51C45.8,-46.8,56.2,-38.6,60.3,-28C64.3,-17.5,61.8,-4.5,58,7C54.3,18.5,49.2,28.4,43.1,39.6C36.9,50.9,29.6,63.4,19.2,67.2C8.9,71.1,-4.6,66.2,-19.2,63C-33.9,59.8,-49.7,58.3,-55.5,49.4C-61.2,40.4,-56.9,24,-54.5,10.6C-52.2,-2.8,-51.9,-13.2,-51.9,-28.1C-51.9,-43,-52.2,-62.4,-43.6,-67.8C-35.1,-73.1,-17.5,-64.5,-2.9,-60C11.8,-55.5,23.5,-55.2,34.6,-51Z" transform="translate(100 100)" />
-          </svg>
-        </div>
-        <div className="container px-4 md:px-6 mx-auto">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
-            <div className="space-y-6">
-              <div className="inline-block">
-                <span className="text-[#6161FF] font-semibold text-sm tracking-wider uppercase">Our Journey</span>
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-slate-900">
-                Our{" "}
-                <span className="relative inline-block text-[#6161FF]">
-                  Story
-                  <motion.svg
-                    className="absolute left-0 -bottom-1 w-full h-5"
-                    viewBox="0 0 500 150"
-                    preserveAspectRatio="none"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <motion.path
-                      d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"
-                      stroke="#FF4500"
-                      strokeWidth="24"
-                      fill="transparent"
-                      strokeDasharray="1000"
-                      strokeDashoffset="1000"
-                      initial={{ strokeDashoffset: 1000 }}
-                      whileInView={{ strokeDashoffset: 0 }}
-                      transition={{ duration: 1, ease: "easeInOut" }}
-                    />
-                  </motion.svg>
-                </span>
-              </h2>
-              </div>
-              <div className="space-y-4">
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  Nobel Tech Innovation emerged in early 2024 with a bold vision: to revolutionize how growing businesses access and implement technology solutions.At Nobel Tech Innovations, we are driven by a passion for technology and a dedication to helping businesses thrive in the digital age.
-                </p>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  Our team of experienced professionals brings a wealth of knowledge and expertise in various IT domains, ensuring that we provide the best possible solutions to our clients.
-                </p>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  Whether you are a startup looking to establish a strong digital presence or an established enterprise seeking to optimize your operations, we are here to support you every step of the way.
-                </p>
-              </div>
-
-            </div>
-            <div className="relative lg:flex justify-end h-[500px] order-1 lg:order-2">
-              {/* Using Next.js Image component with proper dimensions */}
-              <Image
-                src="https://ik.imagekit.io/nobeltech/2149241210_bzR7QmM3W.jpg?updatedAt=1745655943166"
-                alt="Office environment"
-                className="rounded-lg object-cover shadow-lg"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                priority
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Our Products Section */}
       <section id="products" className="w-full py-16 md:py-24 lg:py-32  relative">
         <div className="absolute opacity-75 w-100 right-0 top-0 blur-2xl">
@@ -491,6 +424,178 @@ export default function Home() {
           </svg>
         </div>
       </section>
+
+  {/* About Us Section */}
+      {/* Mobile App Development Section */}
+      <section id="mobile-app" className="w-full py-16 md:py-24 lg:py-32 relative bg-gray-50">
+  <div className="absolute w-100 top-4 left-4 -z-10 blur-2xl">
+    <svg viewBox="0 0 200 200" className="up-down" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill="#E8DAFF"
+        d="M34.6,-51C45.8,-46.8,56.2,-38.6,60.3,-28C64.3,-17.5,61.8,-4.5,58,7C54.3,18.5,49.2,28.4,43.1,39.6C36.9,50.9,29.6,63.4,19.2,67.2C8.9,71.1,-4.6,66.2,-19.2,63C-33.9,59.8,-49.7,58.3,-55.5,49.4C-61.2,40.4,-56.9,24,-54.5,10.6C-52.2,-2.8,-51.9,-13.2,-51.9,-28.1C-51.9,-43,-52.2,-62.4,-43.6,-67.8C-35.1,-73.1,-17.5,-64.5,-2.9,-60C11.8,-55.5,23.5,-55.2,34.6,-51Z"
+        transform="translate(100 100)"
+      />
+    </svg>
+  </div>
+
+  <div className="container px-4 md:px-6 mx-auto">
+    <div className="grid gap-12 lg:grid-cols-2 items-center">
+      {/* Left Content */}
+      <div className="space-y-6">
+        <div className="inline-block">
+          <span className="text-[#6161FF] font-semibold text-sm tracking-wider uppercase">
+            Mobile Solutions
+          </span>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-slate-900">
+            Mobile App{" "}
+            <span className="relative inline-block text-[#6161FF]">
+              Development
+              <motion.svg
+                className="absolute left-0 -bottom-1 w-full h-5"
+                viewBox="0 0 500 150"
+                preserveAspectRatio="none"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <motion.path
+                  d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"
+                  stroke="#FF4500"
+                  strokeWidth="24"
+                  fill="transparent"
+                  strokeDasharray="1000"
+                  strokeDashoffset="1000"
+                  initial={{ strokeDashoffset: 1000 }}
+                  whileInView={{ strokeDashoffset: 0 }}
+                  transition={{ duration: 1, ease: "easeInOut" }}
+                />
+              </motion.svg>
+            </span>
+          </h2>
+        </div>
+
+        <div className="space-y-4">
+          <p className="text-gray-600 text-lg leading-relaxed">
+            We create powerful, user-friendly, and scalable <b>mobile applications</b> tailored to
+            your business goals. From e-commerce to on-demand services and enterprise solutions, our
+            apps are designed for performance and growth.
+          </p>
+          <p className="text-gray-600 text-lg leading-relaxed">
+            Our plans are <b>fully customizable</b> depending on your needs—whether you want a
+            feature-packed product or a lean MVP to test your market. We build for both iOS and
+            Android, ensuring cross-platform compatibility.
+          </p>
+          <p className="text-[#6161FF] font-semibold text-lg underline"><a href='https://wa.me/919828051996' target='_blank'>Connect here for pricing</a></p>
+        </div>
+      </div>
+
+      {/* Right Image */}
+      <div className="relative lg:flex justify-end h-[500px] order-1 lg:order-2">
+        <Image
+          src="https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg?semt=ais_incoming&w=740&q=80" 
+          alt="Mobile app development"
+          className="rounded-lg object-cover shadow-lg"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          priority
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+      {/* Our Marketing Plans */}
+      <section id="plans" className="w-full py-16 md:py-24 lg:py-32 relative bg-gray-50">
+        <div className="container px-4 md:px-6 mx-auto z-10">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
+            <span className="text-[#6161FF] font-semibold text-sm tracking-wider uppercase">Our Plans</span>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-slate-900">
+               
+            Choose the Right{" "}
+                <span className="relative inline-block text-[#6161FF]">
+                Plan for Your Growth
+                  <motion.svg
+                    className="absolute left-0 -bottom-1 w-full h-5"
+                    viewBox="0 0 500 150"
+                    preserveAspectRatio="none"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <motion.path
+                      d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"
+                      stroke="#FF4500"
+                      strokeWidth="24"
+                      fill="transparent"
+                      strokeDasharray="1000"
+                      strokeDashoffset="1000"
+                      initial={{ strokeDashoffset: 1000 }}
+                      whileInView={{ strokeDashoffset: 0 }}
+                      transition={{ duration: 1, ease: "easeInOut" }}
+                    />
+                  </motion.svg>
+                </span>
+            </h2>
+            <p className="max-w-[700px] md:text-gray-600 text-slate-900 text-lg leading-relaxed">
+              From startups to enterprises, we’ve designed flexible plans to match your business needs and marketing goals.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "E-commerce Growth Plan (Free)",
+                price: "₹0",
+                description: "Launch your e-commerce journey with <b>zero upfront cost!</b> We handle website development & marketing services absolutely free. You only pay when you succeed. Only 5% on delivered orders",
+                features: ["Free website development", "Free marketing services", "Best for new startups"],
+              },
+              {
+                title: "Basic Website Development",
+                price: "Starting from ₹15,000",
+                description: "Get a professional website tailored to your business needs. Builds fast, secure, and mobile-friendly websites with modern UI/UX to help you establish a strong online presence.",
+                features: ["Custom design", "Responsive layout", "SEO-friendly structure"],
+              },
+              {
+                title: "Marketing Growth Plan",
+                price: "₹18,500 / month",
+                description: "Boost your brand visibility with our full-fledged SEO & SMO strategy. This plan is designed to strengthen your online presence by improving your search rankings and growing your social media channels with engaging, optimized content.",
+                features: ["Social media growth", "Campaign management", "Monthly reporting"],
+              },
+              {
+                title: "Creative Post Plan",
+                price: "₹16,500 / month",
+                description: "Engage your audience with high-quality, creative social media posts that truly represent your brand. This plan includes <b>20 professionally designed posts every month</b>, each with <b>50+ words of impactful content</b> tailored to your audience.",
+                features: ["Custom creative posts", "Content calendar", "Brand-focused design"],
+              },
+              {
+                title: "Google Ads",
+                price: "₹11,500 / month",
+                description: "Get instant visibility and attract ready-to-buy customers with highly targeted <b>Google Ads campaigns</b>. From search to display networks, we create and manage ads that drive qualified traffic, maximize ROI.",
+                features: ["Search & Display ads", "Keyword optimization", "Performance tracking"],
+              },
+              {
+                title: "Meta Ads (Facebook & Instagram)",
+                price: "₹9,500 / month",
+                description: "Reach your ideal audience where they spend most of their time—on <b>Facebook and Instagram</b>. Our Meta Ads strategy focuses on building awareness, driving engagement, and converting followers into customers with impactful creatives and precise targeting.",
+                features: ["Facebook campaigns", "Instagram ads", "Engagement optimization"],
+              },
+              
+            ].map((plan, index) => (
+              <div
+                key={index}
+                className="glass_effect hover:border-[#6161FF] border border-gray-300 group relative overflow-hidden rounded-2xl p-8 hover:shadow-xl transition-all duration-300 bg-white"
+              >
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">{plan.title}</h3>
+                <p className="text-[#000] font-semibold text-2xl mb-2">{plan.price}</p>
+                <p
+                  className="text-gray-600 text-sm"
+                  dangerouslySetInnerHTML={{ __html: plan.description }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
 
 
       {/* Our Technology Section */}
