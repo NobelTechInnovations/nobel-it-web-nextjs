@@ -740,7 +740,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <div className="lg:col-span-2">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Grow Your Business With Us</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Grow? Let&apos;s Talk!</h2>
               <p className="text-lg mb-8">
                 Ready to take your business to the next level? Get in touch with us today to discuss your IT needs and discover how Nobel Tech Innovations can help you achieve your goals. You can reach us through our contact form, email, or phone. We look forward to hearing from you!
               </p>
