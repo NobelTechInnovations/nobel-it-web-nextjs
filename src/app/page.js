@@ -425,83 +425,7 @@ export default function Home() {
         </div>
       </section>
 
-  {/* About Us Section */}
-      {/* Mobile App Development Section */}
-      <section id="mobile-app" className="w-full py-16 md:py-24 lg:py-32 relative bg-gray-50">
-  <div className="absolute w-100 top-4 left-4 -z-10 blur-2xl">
-    <svg viewBox="0 0 200 200" className="up-down" xmlns="http://www.w3.org/2000/svg">
-      <path
-        fill="#E8DAFF"
-        d="M34.6,-51C45.8,-46.8,56.2,-38.6,60.3,-28C64.3,-17.5,61.8,-4.5,58,7C54.3,18.5,49.2,28.4,43.1,39.6C36.9,50.9,29.6,63.4,19.2,67.2C8.9,71.1,-4.6,66.2,-19.2,63C-33.9,59.8,-49.7,58.3,-55.5,49.4C-61.2,40.4,-56.9,24,-54.5,10.6C-52.2,-2.8,-51.9,-13.2,-51.9,-28.1C-51.9,-43,-52.2,-62.4,-43.6,-67.8C-35.1,-73.1,-17.5,-64.5,-2.9,-60C11.8,-55.5,23.5,-55.2,34.6,-51Z"
-        transform="translate(100 100)"
-      />
-    </svg>
-  </div>
-
-  <div className="container px-4 md:px-6 mx-auto">
-    <div className="grid gap-12 lg:grid-cols-2 items-center">
-      {/* Left Content */}
-      <div className="space-y-6">
-        <div className="inline-block">
-          <span className="text-[#6161FF] font-semibold text-sm tracking-wider uppercase">
-            Mobile Solutions
-          </span>
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-slate-900">
-            Mobile App{" "}
-            <span className="relative inline-block text-[#6161FF]">
-              Development
-              <motion.svg
-                className="absolute left-0 -bottom-1 w-full h-5"
-                viewBox="0 0 500 150"
-                preserveAspectRatio="none"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <motion.path
-                  d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"
-                  stroke="#FF4500"
-                  strokeWidth="24"
-                  fill="transparent"
-                  strokeDasharray="1000"
-                  strokeDashoffset="1000"
-                  initial={{ strokeDashoffset: 1000 }}
-                  whileInView={{ strokeDashoffset: 0 }}
-                  transition={{ duration: 1, ease: "easeInOut" }}
-                />
-              </motion.svg>
-            </span>
-          </h2>
-        </div>
-
-        <div className="space-y-4">
-          <p className="text-gray-600 text-lg leading-relaxed">
-            We create powerful, user-friendly, and scalable <b>mobile applications</b> tailored to
-            your business goals. From e-commerce to on-demand services and enterprise solutions, our
-            apps are designed for performance and growth.
-          </p>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            Our plans are <b>fully customizable</b> depending on your needs—whether you want a
-            feature-packed product or a lean MVP to test your market. We build for both iOS and
-            Android, ensuring cross-platform compatibility.
-          </p>
-          <p className="text-[#6161FF] font-semibold text-lg underline"><a href='https://wa.me/919828051996' target='_blank'>Connect here for pricing</a></p>
-        </div>
-      </div>
-
-      {/* Right Image */}
-      <div className="relative lg:flex justify-end h-[500px] order-1 lg:order-2">
-        <Image
-          src="https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg?semt=ais_incoming&w=740&q=80" 
-          alt="Mobile app development"
-          className="rounded-lg object-cover shadow-lg"
-          fill
-          sizes="(max-width: 768px) 100vw, 50vw"
-          priority
-        />
-      </div>
-    </div>
-  </div>
-</section>
+  
 
       {/* Our Marketing Plans */}
       <section id="plans" className="w-full py-16 md:py-24 lg:py-32 relative bg-gray-50">
@@ -597,6 +521,82 @@ export default function Home() {
 
 
 
+      {/* Mobile App Development Section */}
+      <section id="mobile-app" className="w-full py-16 md:py-24 lg:py-32 relative bg-gray-50">
+        <div className="absolute w-100 top-4 left-4 -z-10 blur-2xl">
+          <svg viewBox="0 0 200 200" className="up-down" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#E8DAFF"
+              d="M34.6,-51C45.8,-46.8,56.2,-38.6,60.3,-28C64.3,-17.5,61.8,-4.5,58,7C54.3,18.5,49.2,28.4,43.1,39.6C36.9,50.9,29.6,63.4,19.2,67.2C8.9,71.1,-4.6,66.2,-19.2,63C-33.9,59.8,-49.7,58.3,-55.5,49.4C-61.2,40.4,-56.9,24,-54.5,10.6C-52.2,-2.8,-51.9,-13.2,-51.9,-28.1C-51.9,-43,-52.2,-62.4,-43.6,-67.8C-35.1,-73.1,-17.5,-64.5,-2.9,-60C11.8,-55.5,23.5,-55.2,34.6,-51Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </div>
+
+        <div className="container px-4 md:px-6 mx-auto">
+          <div className="grid gap-12 lg:grid-cols-2 items-center">
+            {/* Left Content */}
+            <div className="space-y-6">
+              <div className="inline-block">
+                <span className="text-[#6161FF] font-semibold text-sm tracking-wider uppercase">
+                  Mobile Solutions
+                </span>
+                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-slate-900">
+                  Mobile App{" "}
+                  <span className="relative inline-block text-[#6161FF]">
+                    Development
+                    <motion.svg
+                      className="absolute left-0 -bottom-1 w-full h-5"
+                      viewBox="0 0 500 150"
+                      preserveAspectRatio="none"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <motion.path
+                        d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"
+                        stroke="#FF4500"
+                        strokeWidth="24"
+                        fill="transparent"
+                        strokeDasharray="1000"
+                        strokeDashoffset="1000"
+                        initial={{ strokeDashoffset: 1000 }}
+                        whileInView={{ strokeDashoffset: 0 }}
+                        transition={{ duration: 1, ease: "easeInOut" }}
+                      />
+                    </motion.svg>
+                  </span>
+                </h2>
+              </div>
+
+              <div className="space-y-4">
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  We create powerful, user-friendly, and scalable <b>mobile applications</b> tailored to
+                  your business goals. From e-commerce to on-demand services and enterprise solutions, our
+                  apps are designed for performance and growth.
+                </p>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Our plans are <b>fully customizable</b> depending on your needs—whether you want a
+                  feature-packed product or a lean MVP to test your market. We build for both iOS and
+                  Android, ensuring cross-platform compatibility.
+                </p>
+                <p className="text-[#6161FF] font-semibold text-lg underline"><a href='https://wa.me/919828051996' target='_blank'>Connect here for pricing</a></p>
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <div className="relative lg:flex justify-end h-[500px] order-1 lg:order-2">
+              <Image
+                src="https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg?semt=ais_incoming&w=740&q=80" 
+                alt="Mobile app development"
+                className="rounded-lg object-cover shadow-lg"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Our Technology Section */}
       <section id="technologies" className="w-full py-16 md:py-24 lg:py-32  relative">
