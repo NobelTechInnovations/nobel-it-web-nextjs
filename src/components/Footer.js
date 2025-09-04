@@ -6,15 +6,15 @@ import { Icon } from '@iconify/react';
 
 const Footer = () => {
   return (
-    <footer className="relative w-full bg-black text-white overflow-hidden">
+    <footer className="relative w-full bg-[#3a256e] text-white overflow-hidden">
       {/* Footer Dots Pattern */}
 
 
       <div className="container px-4 md:px-6 mx-auto relative z-10 py-12">
         {/* Company Logo */}
         <div className="flex justify-center mb-12">
-          <div className=" w-100 relative h-15 mr-2">
-            <Image fill src="/logo_footer.png" alt="Nobel Tech Innovation" className="object-contain" />
+          <div className=" w-100 relative h-25">
+            <Image fill src="/logo_footer.png" alt="Nobel Tech Innovation"  className="object-contain" />
           </div>
         </div>
 
@@ -25,17 +25,17 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">Core Services</h3>
             <ul className="space-y-3">
               <li>
-                <span className="text-gray-400 hover:text-white transition-colors">
+                <span className="text-gray-100 hover:text-white transition-colors">
                   Web & Mobile App Development
                 </span>
               </li>
               <li>
-                <span className="text-gray-400 hover:text-white transition-colors">
+                <span className="text-gray-100 hover:text-white transition-colors">
                   Custom SaaS Solutions
                 </span>
               </li>
               <li>
-                <span className="text-gray-400 hover:text-white transition-colors">
+                <span className="text-gray-100 hover:text-white transition-colors">
                   WordPress & Shopify Expertise
                 </span>
               </li>
@@ -46,9 +46,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Tech Stack</h3>
             <ul className="space-y-3">
-              <li className="text-gray-400">Backend: Laravel, Node.js, Go Lang, Python</li>
-              <li className="text-gray-400">Frontend: React.js, Flutter</li>
-              <li className="text-gray-400">Mobile: Native (iOS/Android), Cross-platform</li>
+              <li className="text-gray-100">Backend: Laravel, Node.js, Go Lang, Python</li>
+              <li className="text-gray-100">Frontend: React.js, Flutter</li>
+              <li className="text-gray-100">Mobile: Native (iOS/Android), Cross-platform</li>
             </ul>
           </div>
 
@@ -59,9 +59,7 @@ const Footer = () => {
               <div><Icon icon="logos:google-maps" width="16.75" height="24" /></div>
               <div>
                 <p className="font-semibold text-gray-200">Address</p>
-                <address className="text-gray-400 not-italic">
-                  Plot No. 29-30<br />
-                  Jivan Vihar Gajsinghpura Mansarovar<br />
+                <address className="text-gray-100 not-italic">
                   Jaipur, Rajasthan, India
                 </address>
               </div>
@@ -70,7 +68,7 @@ const Footer = () => {
               <div><Icon icon="fluent-color:mail-16" width="24" height="24" /></div>
               <div>
                 <p className="font-semibold">Email</p>
-                <a href="mailto:nobeltechinnovations@gmail.com" className="text-gray-400 hover:text-blue-400 hover:underline">
+                <a href="mailto:nobeltechinnovations@gmail.com" className="text-gray-100 hover:text-blue-400 hover:underline">
                   nobeltechinnovations@gmail.com
                 </a>
               </div>
@@ -79,9 +77,9 @@ const Footer = () => {
               <div><Icon icon="emojione-v1:mobile-phone" width="24" height="24" /></div>
               <div>
                 <p className="font-semibold">Phone</p>
-                <a href="tel:+919828051996" className="text-gray-400 hover:text-blue-400 hover:underline">+(91) 9828051996</a><br />
-                <a href="tel:+918079076815" className="text-gray-400 hover:text-blue-400 hover:underline">+(91) 8949333672</a><br />
-                <a href="tel:+918079076815" className="text-gray-400 hover:text-blue-400 hover:underline">+(91) 9509285579</a>
+                <a href="tel:+919828051996" className="text-gray-100 hover:text-blue-400 hover:underline">+(91) 9828051996</a><br />
+                <a href="tel:+918079076815" className="text-gray-100 hover:text-blue-400 hover:underline">+(91) 8949333672</a><br />
+                <a href="tel:+918079076815" className="text-gray-100 hover:text-blue-400 hover:underline">+(91) 9509285579</a>
               </div>
             </div>
           </div>
@@ -103,7 +101,7 @@ const Footer = () => {
                   id="privacy-consent"
                   className="mt-1"
                 />
-                <label htmlFor="privacy-consent" className="text-sm text-gray-400">
+                <label htmlFor="privacy-consent" className="text-sm text-gray-100">
                   I agree to the <Link href="/privacy-policy" className="text-blue-400 hover:text-blue-300 underline">Privacy Policy</Link> and give my permission to process my personal data for the purposes specified in the Privacy Policy
                 </label>
               </div>
@@ -131,14 +129,14 @@ const Footer = () => {
 
 
         {/* Footer Bottom */}
-        <div className="border-t border-gray-800 pt-6 text-center text-gray-400">
+        <div className="border-t border-gray-800 pt-6 text-center text-gray-100">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p>© {new Date().getFullYear()} Nobel Tech Innovation. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/terms-conditions" className="text-gray-400 hover:text-white transition-colors text-sm">
+              <Link href="/terms-conditions" className="text-gray-100 hover:text-white transition-colors text-sm">
                 Terms & Conditions
               </Link>
-              <Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-sm">
+              <Link href="/privacy-policy" className="text-gray-100 hover:text-white transition-colors text-sm">
                 Privacy Policy
               </Link>
             </div>

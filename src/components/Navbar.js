@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-15">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="relative w-32 h-10">
+            <div className="relative w-100 h-20">
               <Image src="/logo_nobel.png" alt="Nobel Tech Innovations" fill className="object-contain object-left" />
             </div>
           </Link>
