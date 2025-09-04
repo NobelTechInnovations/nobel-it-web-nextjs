@@ -46,7 +46,7 @@ export default function Home() {
               <p className=" text-lg text-gray-600">
                 Welcome to Nobel Tech Innovations, your trusted partner for comprehensive IT solutions and business management services. We specialize in delivering cutting-edge technology solutions tailored to meet the unique needs of businesses in the Indian market. Our commitment to innovation, quality, and customer satisfaction sets us apart as a leading IT service provider.
               </p>
-              <div className="flex flex-wrap sm:flex-row sm:space-y-0 sm:space-x-4 pt-4 items-center space-x-5">
+              <div className="flex flex-wrap sm:flex-row gap-2 sm:space-y-0 sm:space-x-4 pt-4 items-center space-x-5">
                 <a href="#contact" className="rounded px-6 py-2 bg-[#6161FF] text-white font-medium hover:bg-[#5151D5] transition-colors">
                   Schedule a Free Consultation
                 </a>
