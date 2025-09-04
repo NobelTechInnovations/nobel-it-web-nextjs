@@ -42,14 +42,17 @@ export default function Navbar() {
               <button onClick={() => scrollToSection('home')} className="flex cursor-pointer items-center text-gray-700 hover:text-[#6161FF] font-semibold hover:border-b border-[#6161FF]">
                 Home
               </button>
-              <button onClick={() => scrollToSection('about')} className="flex items-center cursor-pointer text-gray-700 hover:text-[#6161FF] font-semibold hover:border-b border-[#6161FF]">
-                About
+              <button onClick={() => scrollToSection('marketing')} className="flex items-center cursor-pointer text-gray-700 hover:text-[#6161FF] font-semibold hover:border-b border-[#6161FF]">
+                Nobel Strategy
               </button>
               <button onClick={() => scrollToSection('products')} className="flex items-center cursor-pointer text-gray-700 hover:text-[#6161FF] font-semibold hover:border-b border-[#6161FF]">
                 Products
               </button>
               <button onClick={() => scrollToSection('services')} className="flex items-center cursor-pointer text-gray-700 hover:text-[#6161FF] font-semibold hover:border-b border-[#6161FF]">
                 Services   
+              </button>
+              <button onClick={() => scrollToSection('pricing')} className="flex items-center cursor-pointer text-gray-700 hover:text-[#6161FF] font-semibold hover:border-b border-[#6161FF]">
+                Pricing   
               </button>
               <button onClick={() => scrollToSection('technologies')} className="flex items-center cursor-pointer text-gray-700 hover:text-[#6161FF] font-semibold hover:border-b border-[#6161FF]">
                 Tech Stack
@@ -91,14 +94,17 @@ export default function Navbar() {
               <button onClick={() => scrollToSection('home')} className="text-left text-gray-700 hover:text-[#6161FF] font-medium py-2">
                 Home
               </button>
-              <button onClick={() => scrollToSection('about')} className="text-left text-gray-700 hover:text-[#6161FF] font-medium py-2">
-                About
+              <button onClick={() => scrollToSection('marketing')} className="text-left text-gray-700 hover:text-[#6161FF] font-medium py-2">
+                Nobel Strategy
               </button>
               <button onClick={() => scrollToSection('products')} className="text-left text-gray-700 hover:text-[#6161FF] font-medium py-2">
                 Products
               </button>
               <button onClick={() => scrollToSection('services')} className="text-left text-gray-700 hover:text-[#6161FF] font-medium py-2">
                 Services
+              </button>
+               <button onClick={() => scrollToSection('pricing')} className="text-left text-gray-700 hover:text-[#6161FF] font-medium py-2">
+                Pricing
               </button>
               <button onClick={() => scrollToSection('technologies')} className="text-left text-gray-700 hover:text-[#6161FF] font-medium py-2">
                 Tech Stack

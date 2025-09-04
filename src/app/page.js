@@ -128,7 +128,7 @@ export default function Home() {
       </section>
 
       {/* Our Martkeign plans */}
-      <section id="services" className="w-full py-16 md:py-24 lg:py-32 relative bg-white">
+      <section id="marketing" className="w-full py-16 md:py-24 lg:py-32 relative bg-white">
         {/* Background Image with Overlay */}
 
         <div className="absolute opacity-75 w-100 right-0 top-0 -z-10 blur-2xl">
@@ -428,7 +428,7 @@ export default function Home() {
   
 
       {/* Our Marketing Plans */}
-      <section id="plans" className="w-full py-16 md:py-24 lg:py-32 relative bg-gray-50">
+      <section id="pricing" className="w-full py-16 md:py-24 lg:py-32 relative bg-gray-50">
         <div className="container px-4 md:px-6 mx-auto z-10">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
             <span className="text-[#6161FF] font-semibold text-sm tracking-wider uppercase">Our Plans</span>
