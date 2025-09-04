@@ -368,37 +368,37 @@ export default function Home() {
             {[
               {
                 title: "Complete Digital Marketing Solutions",
-                description: "Unlock your business’s true online potential with the perfect mix of smart marketing—Google Ads and SEO for instant visibility and lasting growth, Facebook Ads paired with powerful creatives to grab attention and drive engagement, and Instagram content boosted with targeted ads to build followers and sales. From search to social, we help your brand shine everywhere that matters.",
+                description: "Boost your online presence with the perfect mix of SEO, Google Ads, Facebook campaigns, and Instagram growth to reach, engage, and convert your audience.",
                 icon: <Icon icon="lucide:megaphone" width="64" height="64" />,
                 color: "bg-purple-50 text-purple-600",
               },
               {
                 title: "Web Software Development",
-                description: "We specialize in creating robust and scalable web applications that meet your business requirements. Our team of skilled developers works closely with you to understand your needs and deliver high-quality, user-friendly web solutions. Whether you need a custom web application or a complete e-commerce platform, we have the expertise to bring your ideas to life.",
+                description: "We build scalable, secure, and user-friendly web applications—from custom business tools to full e-commerce platforms—tailored to your goals.",
                 icon: <Icon icon="lucide:code-2" width="64" height="64" />,
                 color: "bg-purple-50 text-purple-600",
               },
               {
                 title: "Mobile Software Development",
-                description: "In today&apos;s mobile-first world, having a strong mobile presence is crucial. Our mobile software development services include both native and cross-platform app development. We use the latest technologies and frameworks to create intuitive, feature-rich mobile applications that provide an exceptional user experience. Whether you need an iOS or Android app, we can help you reach your target audience effectively.",
+                description: "Create powerful, cross-platform mobile apps with modern features and smooth user experiences, whether for iOS, Android, or both.",
                 icon: <Icon icon="tabler:device-mobile-code" width="64" height="64" />,
                 color: "bg-blue-50 text-[#6161FF]",
               },
               {
                 title: "SaaS Software Development",
-                description: "Leverage the power of Software as a Service (SaaS) to streamline your business operations and enhance productivity. Our SaaS development services include custom SaaS application development, integration with existing systems, and ongoing maintenance and support. We help you build scalable, secure, and user-friendly SaaS solutions that drive your business forward.",
+                description: "We design secure, scalable, and user-friendly SaaS platforms with seamless integrations to streamline your business operations.",
                 icon: <Icon icon="tabler:cloud-cog" width="64" height="64" />,
                 color: "bg-green-50 text-green-600",
               },
               {
                 title: "WordPress Development",
-                description: "Enhance your WordPress website with custom themes and plugins tailored to your specific needs. Our team of WordPress experts can develop custom themes that reflect your brand identity and provide a seamless user experience. We also offer plugin customization services to extend the functionality of your WordPress site, ensuring that it meets all your requirements.",
+                description: "Get custom WordPress themes, plugins, and optimizations that reflect your brand and enhance your site’s functionality.",
                 icon: <Icon icon="tabler:layout" width="64" height="64" />,
                 color: "bg-green-50 text-green-600",
               },
               {
                 title: "Shopify Development",
-                description: "Looking to build an online store? Our Shopify development services can help you create a powerful, user-friendly e-commerce platform that drives sales and customer engagement. We specialize in custom Shopify store development, theme customization, and integration with third-party tools and services. Whether you are starting from scratch or looking to revamp your existing store, we can help you achieve your e-commerce goals.",
+                description: "Launch or scale your online store with custom Shopify development, theme customization, and seamless third-party integrations.",
                 icon: <Icon icon="lucide:shopping-bag" width="64" height="64" />,
                 color: "bg-green-50 text-green-600",
               },
