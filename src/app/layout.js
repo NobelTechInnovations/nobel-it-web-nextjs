@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content={metadata.openGraph.type} />
         <link rel="manifest" href={metadata.manifest} />
 
-        <meta name="google-site-verification" content="e2tdCM-xbdTFGwcfnBjEddwmYg1_cLA2AahOIYmfd0I" />
+        <meta name="google-site-verification" content="E507Pf8UIoLGAfujA3Q2xItvvpo3o_3x7HuNs65I4lA" />
 
         {/* Bing Webmaster Tools */}
         <meta name="msvalidate.01" content="F98AE0F53D21F68C13C215572D8F39B6"/>
