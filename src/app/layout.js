@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import { Metadata } from "next";
+
+
 export const metadata = {
   title: "Nobel Tech Innovation | Best IT Company in Jaipur | Web Development, SEO & Digital Solutions",
   description:
@@ -36,6 +39,10 @@ export const metadata = {
     siteName: "Nobel Tech Innovation",
     locale: "en_US",
     type: "website",
+  },
+
+  verification: {
+    google: "E507Pf8UIoLGAfujA3Q2xItvvpo3o_3x7HuNs65I4lA",
   },
   manifest: "/manifest.json",
   themeColor: "#2563eb",
